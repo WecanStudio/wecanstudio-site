@@ -1,0 +1,439 @@
+<!DOCTYPE HTML>
+<html>
+    <link rel="icon" href="favicon.ico" mce_href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" mce_href="favicon.ico" type="image/x-icon">
+	<head>
+        <meta name="keyword" content="微客工作室"> 
+        <meta name="description" content="微客工作室,Wecan Studio,西安电子科技大学,西安,大学生创新创业,移动互联网"> 
+        <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+        <meta charset="utf-8">
+		<title>微客工作室</title>
+		<link href="./css/bootstrap.css" rel='stylesheet' type='text/css' />
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="./js/jquery.min.js"></script>
+		 <!-- Custom Theme files -->
+		 <!-- animated-css -->
+		<link href="./css/animate.css" rel="stylesheet" type="text/css" media="all">
+		<script src="./js/wow.min.js"></script>
+		<script>
+		 new WOW().init();
+		</script>
+		<!-- animated-css -->
+		  <!-- start-smoth-scrolling-->
+		<script type="text/javascript" src="./js/move-top.js"></script>
+		<script type="text/javascript" src="./js/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+		 <!-- start-smoth-scrolling-->
+		<link href="./css/style.css" rel='stylesheet' type='text/css' />
+   		 <!-- Custom Theme files -->
+		<script type="application/x-javascript"> 
+		addEventListener("load", function() 
+			{ 
+				setTimeout(hideURLbar, 0); 
+			}, false); function hideURLbar()
+			{ 
+				window.scrollTo(0,1); 
+			} 
+		</script>
+		</script>
+		<!--start-top-nav-script-->
+		<script>
+			$(function() {
+				var pull 		= $('#pull');
+					menu 		= $('nav ul');
+					menuHeight	= menu.height();
+				$(pull).on('click', function(e) {
+					e.preventDefault();
+					menu.slideToggle();
+				});
+				$(window).resize(function(){
+	        		var w = $(window).width();
+	        		if(w > 320 && menu.is(':hidden')) {
+	        			menu.removeAttr('style');
+	        		}
+	    		});
+			});
+		</script>
+		<!--//End-top-nav-script-->
+	</head>
+	<body>
+		<div class="bg" id="home">
+			<!--- start-header-->
+			<div class="header wow bounceInDown" data-wow-delay="0.4s" id="fixed">
+				<div class="top-header">
+					<div class="container">
+						<!--start-top-nav-->
+						 <nav class="top-nav">
+							<ul class="top-nav">
+								<li><a href="#home" class="scroll">主页</a></li>
+								<li><a href="#about" class="scroll">简介</a></li>
+								<li><a href="#work" class="scroll">作品</a></li>
+								<li><a href="#team" class="scroll">成员</a></li>
+								<li><a href="#contact" class="scroll">联系我们</a></li>
+							</ul>
+							<a href="#" id="pull"><img src="./images/menu-icon3.png" title="menu" /></a>
+						</nav>
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+			</div>
+
+			<div class="header wow bounceInDown" data-wow-delay="0.4s" id="notfixed">
+				<div class="top-header">
+					<div class="container">
+						<div class="logo">
+							<a href="#"><img src="./images/wecanlogo.png" title="dreams" /></a>
+						</div>
+						<!--start-top-nav-->
+						 <nav class="top-nav">
+						</nav>
+					</div>
+				</div>
+			</div>
+			<!--- //End-header-->
+			<!-- banner -->
+			<div class="banner wow fadeIn" data-wow-delay="0.5s">
+				<div class="container">
+					<div class="banner-info text-center">
+						<h1>Wecan Studio,We can do it.</h1><br />
+						<span> </span>
+						<p><q>学习，分享，投入，收获，承载着创新的思维</q></p>
+					</div>
+				</div>
+			</div>
+		</div>
+				<!-- banner -->
+	            <!-- about -->
+				<!--start-about-->
+			<div id="about" class="about">
+				<div class="wrap"> 
+					<div class="about-head">
+						<h1>团队简介</h1>
+						<span> </span>
+					</div>
+					<!---start-about-time-line-->
+					<div class="about-time-line">
+							<li>`
+								<div class="cbp_tmicon img1"> </div>
+								<div class="cbp_tmlabel wow fadeInLeft" data-wow-delay="0.4s">
+									<h2>2014年4月下旬 微客工作室正式成立</h2>
+									<p>“微客工作室”是由西安电子科技大学的一群热爱互联网技术的小伙伴们共同创建的一个工作室，专注于互联网、移动互联网方向的学习与开发。</p>
+								</div>
+							</li><br />
+							<li>
+								<div class="cbp_tmicon1 img2"> </div>
+								<div class="cbp_tmlabel cbp_tmlabel1 wow fadeInRight" data-wow-delay="0.4s">
+									<h2>2014年9月 我们为工作室找到了新家</h2>
+									<p>正所谓赢在起跑线上，骨干成员们为工作室挑选了一个有利于各成员工作的环境，地点选在新校区家属区B区，工作室与教学区相接，将更方便工作室的成员到工作室学习。</p>
+								</div>
+							</li><br />
+							<li>
+								<div class="cbp_tmicon2 img3"> </div>
+								<div class="cbp_tmlabel wow fadeInLeft" data-wow-delay="0.4s">
+									<h2>2014年10月初 微客工作室秋季纳新</h2>
+									<p>为了汲取更优秀的同学在这微客的大家庭里一起学习，分享，交流，此次招新大二大三占了报名的主力军，但是也有不少大一，大四及研究生。
+									</p>
+								</div>
+							</li><br />
+							<li>
+								<div class="cbp_tmicon3 img4"> </div>
+								<div class="cbp_tmlabel cbp_tmlabel1 wow fadeInRight" data-wow-delay="0.4s">
+									<h2>2014年11月22日 互联网交流会</h2>
+									<p>工作室开展了室学习工作交流会，本次交流会主要探讨了目前工作室正在做的产品和项目情况，并对未来的项目进行了简单的介绍，其中包括工作室自主开发的智能通讯录产品、“干嘛呢”陌生人社交软件等等</p>
+								</div>
+							</li><br />
+							<li>
+								<div class="cbp_tmicon4 img5"> </div>
+							</li>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="clearfix"> </div>
+					</div>
+			</div>
+					<!--//End-about-time-line-->
+				<!-- about -->
+				
+	            
+	           <!-- portfolio-works -->
+						<div id="work" class="portfolio-works">
+							<div class="col-md-4 portfolio-work-grid wow bounceIn" data-wow-delay="0.4s">
+								<div class="portfolio-work-grid-pic">
+									<img src="./images/p1.jpg" title="name" />
+								</div>
+								<div class="portfolio-work-grid-caption">
+									<h4>2014西电毕业季网站</h4>
+									<p>2014年西电毕业季网站是西电学工处为毕业典礼而开通的官方网站</p>
+								</div>
+							</div>
+							<div class="col-md-4 portfolio-work-grid wow bounceIn" data-wow-delay="0.4s">
+								<div class="portfolio-work-grid-pic">
+									<img src="./images/p2.jpg" title="name" />
+								</div>
+								<div class="portfolio-work-grid-caption">
+									<h4>嘉禾畅聊</h4>
+									<p>本产品采用voip方式为用户提供免费通话服务，通话质量高并且不耗流量</p>
+								</div>
+							</div>
+							<div class="col-md-4 portfolio-work-grid wow bounceIn" data-wow-delay="0.4s">
+								<div class="portfolio-work-grid-pic">
+									<img src="./images/p3.jpg" title="name" />
+								</div>
+								<div class="portfolio-work-grid-caption">
+									<h4>美特拉华微商城</h4>
+									<p>“美特拉华”微信公众号微商城系统，并为其定制开发了推广分红盈利系统</p>
+								</div>
+							</div>
+							<div class="col-md-4 portfolio-work-grid wow bounceIn" data-wow-delay="0.4s">
+								<div class="portfolio-work-grid-pic">
+									<img src="./images/p4.jpg" title="name" />
+								</div>
+								<div class="portfolio-work-grid-caption">
+									<h4>学子360大学生兼职</h4>
+									<p>“学子360”微信号，一款帮助在校大学生寻找兼职的微信应用</p>
+								</div>
+							</div>
+							<div class="col-md-4 portfolio-work-grid wow bounceIn" data-wow-delay="0.4s">
+								<div class="portfolio-work-grid-pic">
+									<img src="./images/p5.jpg" title="name" />
+								</div>
+								<div class="portfolio-work-grid-caption">
+									<h4>企业内训系统</h4>
+									<p>本套企业内训系统为企业提供了专业的培训管理体系，并且能够帮助企业更简单高效地完成企业内训工作</p>
+								</div>
+							</div>
+							<div class="col-md-4 portfolio-work-grid wow bounceIn" data-wow-delay="0.4s">
+								<div class="portfolio-work-grid-pic">
+									<img src="./images/p6.jpg" title="name" />
+								</div>
+								<div class="portfolio-work-grid-caption">
+									<h4>腾书坊旧书交易赠送平台</h4>
+									<p>“腾书坊”旧书交易赠送平台为微客工作室独立开发的产品，买卖旧书嫌书店贵？还不抓紧上“腾书坊”找找看有没有学长在免费赠送吧</p>
+								</div>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+						<!-- portfolio-works -->
+	            
+	            
+	            
+	           <!-- team -->
+			<div id="team" class="team-members" style="background:#e8e8e8;">
+					<div class="wrap"> 
+						<div class="tm-head">
+							<h3>骨干成员</h3>
+							<span></span>
+							<p>没有他们的付出和努力，就没有今天的微客</p>
+                            <br/>
+                            <br/>
+						</div>
+						<div class="tm-head-grids">
+							<div class="tm-head-grid wow fadeInLeft" data-wow-delay="0.4s">
+                                <div class="tm-head-left">
+								<img src="./images/team-member2.jpg" alt="">       
+                                </div>
+                                <div>
+                                <p align="center">
+                                    <br>
+                                <strong>倪天成</strong>&nbsp;&nbsp;&nbsp;<strong>工作室室长</strong>
+                                </p>
+                                 <p>
+                                    出色的人际拓展能力，丰富的商务谈判经验。历任西电通院科协主席、担任西电CSDN高校俱乐部主席、组建西电鲲鹏移动创新俱乐部并担任主席。众多互联网软件项目实践。
+                                </p>
+                                </div>
+<!--
+								<ul class="top-social-icons">
+									<li><a class="twitter" href="#"> </a></li>
+									<li><a class="facebook" href="#"> </a></li>
+									<li><a class="pin" href="#"> </a></li>
+									<div class="clear"> </div>
+								</ul>
+-->
+							</div>
+<!--
+							<div class="tm-head-grid wow fadeInUp" data-wow-delay="0.4s">
+								<img src="./images/team-member2.jpg" alt="">
+								<h4>Rico Massimo</h4>
+								<h5>Coder</h5>
+								<ul class="top-social-icons">
+									<li><a class="twitter" href="#"> </a></li>
+									<li><a class="facebook" href="#"> </a></li>
+									<li><a class="pin" href="#"> </a></li>
+									<div class="clear"> </div>
+								</ul>
+							</div>
+-->
+							<div class="tm-head-grid wow fadeInRight" data-wow-delay="0.4s">
+								<div class="tm-head-left">
+                                <img src="./images/team-member2.jpg" alt="">
+                                </div>
+                                <div>
+                                <p align="center">
+                                    <br>
+                                <strong>司志伟</strong>&nbsp;&nbsp;&nbsp;<strong>运营总监</strong>
+                                </p>
+                                <p>    
+                                曾担任通院科协秘书处副部长，CSDN高校俱乐部主席，擅长了解多种编程和软件研发技术，项目实战经验丰富。
+                                </p>
+                                </div>
+<!--
+								<ul class="top-social-icons">
+									<li><a class="twitter" href="#"> </a></li>
+									<li><a class="facebook" href="#"> </a></li>
+									<li><a class="pin" href="#"> </a></li>
+									<div class="clear"> </div>
+								</ul>
+-->
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+						<p class="team-info"></p>
+					</div>
+				</div>
+			<!-- team -->
+	            
+	            
+				<div id="port" class="expertise" style="background:#e8e8e8;">
+					<div class="expertice-grids">
+						<div class="col-md-8 expertice-left-grid wow fadeInLeft" data-wow-delay="0.4s">
+							<div class="expertise-head">
+								<h3>其他成员</h3>
+								<span></span>
+								<p>微客工作室由web前端、后端、Android、Java、IOS、运营等小组构成</p>
+							</div>
+							<div class="expertise-left-inner-grids">
+								<div class="e-left-inner-grid">
+									<div class="e-left-inner-grid-left">
+										<span class="e-icon1"> </span>
+									</div>
+									<div class="e-left-inner-grid-right">
+										<h4>运营与产品</h4>
+										<p>龙飞宇、区浩轩、李娇娇、胡延瑞、王志坚、杜鹃妮、梁莹、刘哲林、孙元国</p>
+									</div>
+									<div class="clearfix"> </div>
+								</div>
+								<div class="e-left-inner-grid">
+									<div class="e-left-inner-grid-left">
+										<span class="e-icon2"> </span>
+									</div>
+									<div class="e-left-inner-grid-right">
+										<h4>Web开发</h4>
+										<p>寸晓东、潘庆、姚艳梅、陈智仁、陆凯、熊林、柯易楠、艾合麦提·阿卜力皮孜、吕彦峰、王维国、陈磊、张建英、胡凯、杨鹏、肖奕、张耀中</p>
+									</div>
+									<div class="clearfix"> </div>
+								</div>
+								<div class="e-left-inner-grid">
+									<div class="e-left-inner-grid-left">
+										<span class="e-icon3"> </span>
+									</div>
+									<div class="e-left-inner-grid-right">
+										<h4>移动应用开发</h4>
+										<p>侯明智、冉天华、宋金生、孙舒、周冲、王铭</p>
+									</div>
+									<div class="clearfix"> </div>
+								</div>
+								<div class="e-left-inner-grid">
+									<div class="e-left-inner-grid-left">
+										<span class="e-icon4"> </span>
+									</div>
+									<div class="e-left-inner-grid-right">
+										<h4>设计</h4>
+										<p>栾不群、王运祥、王坤元、许睿君</p>
+									</div>
+									<div class="clearfix"> </div>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+							
+						</div>
+						<div class="col-md-4 expertice-right-grid wow fadeInRight" data-wow-delay="0.4s">
+							
+						</div>
+						<div class="clearfix"> </div> 
+					</div>
+				</div>				
+				<!-- contact -->
+				<div id="contact" class="contact">
+					<div class="container">
+						<div class="contact-grids">
+				<div class="col-md-6">
+						<div class="contact-left wow fadeInRight" data-wow-delay="0.4s">
+							<h3>联系我们</h3>
+							<label>您可以通过电话联系我们，也可以通过发送e-mail联系我们。
+                            <br/>我们会在第一时间给您回复。</label>
+							<div class="contact-left-grids">
+								<div class="col-md-6">
+									<div class="contact-left-grid">
+										
+                                        <P>微信扫一扫↓↓↓</P>
+                                        <p>
+                                        <img src="images/wechat.jpg">
+                                        </p>
+                                    
+<!--
+										<p><span class="c-twitter"> </span><a href="#">@dreams</a></p>
+										<p><span class="c-pluse"> </span><a href="#">plus.com/dreams</a></p>
+-->
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="contact-right-grid">
+										<br>
+										<p><span class="c-msg"> </span><a href="mailto:wecanstudio@163.com">&nbsp;&nbsp;wecanstudio@163.com</a></p>
+<!--                                        <p><span class="c-mobi" style="background: url(images/phone.png);"> </span>&nbsp;&nbsp;(416) 555-0000</p>-->
+                                        <p><span class="c-address" style="background-image: url(images/address.png);"> </span>&nbsp;&nbsp;新校区家属区B区<br/>&nbsp;&nbsp;&nbsp;&nbsp;19号楼一单元201</p>
+<!--
+										<p><span class="c-face"> </span><a href="#">facebook.com/dreams</a></p>
+										<p><span class="c-pin"> </span><a href="#">pinterest.com/dreams</a></p>
+-->
+									</div>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+						</div>
+					</div>
+							<div class="col-md-6">
+								<div class="contact-right wow fadeInLeft" data-wow-delay="0.4s">
+									<form action="rec.php" method="post">
+										<input type="text" name="name" class="text" placeholder="name.." onfocus="this.value = '';this.style.backgroundColor='pink'" onblur="this.style.backgroundColor='white';">
+							 			<input type="text" name="email" class="text" placeholder="email.." onfocus="this.value = '';this.style.backgroundColor='pink'" onblur="this.style.backgroundColor='white';">
+							 	 		<textarea name="content" placeholder="content..." onfocus="this.value = '';this.style.backgroundColor='pink'" onblur="this.style.backgroundColor='white';"></textarea>
+										<input class="wow shake" data-wow-delay="0.3s" type="submit" value="Send Message" />
+									</form>
+								</div>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+						<!-- copy-right -->
+						<div class="copy-right text-center">
+							<p>Copyright&copy;2014~2015&nbsp;&nbsp;All Rights Reserved</p>
+							<script type="text/javascript">
+											$(document).ready(function() {
+												/*
+												var defaults = {
+										  			containerID: 'toTop', // fading element id
+													containerHoverID: 'toTopHover', // fading element hover id
+													scrollSpeed: 1200,
+													easingType: 'linear' 
+										 		};
+												*/
+												
+												$().UItoTop({ easingType: 'easeOutQuart' });
+												
+											});
+										</script>
+											<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+						</div>
+						<!-- copy-right -->
+					</div>
+				</div>
+				<!-- contact -->
+		</div>
+	</body>
+</html>
