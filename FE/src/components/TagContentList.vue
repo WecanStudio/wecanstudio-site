@@ -13,8 +13,8 @@
 </template>
 
 <script type="text/babel">
-  import { tagContentList, tagContentListId, tags } from '../vuex/getters'
-  import { getTagContentList, updateHeadline } from '../vuex/actions'
+  import {tagContentList, tagContentListId, tags} from '../vuex/getters'
+  import {getTagContentList, updateHeadline} from '../vuex/actions'
 
   export default {
     data () {

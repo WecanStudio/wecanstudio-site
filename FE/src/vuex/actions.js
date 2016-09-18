@@ -1,9 +1,9 @@
 import * as types from './mutation-types'
 import {API_ROOT} from '../config'
 
-export const getContentList = function ({dispatch}) {
+export const getPostsList = function ({dispatch}) {
   dispatch(types.REQUEST_CONTENT_LIST)
-  this.$http.get('http://localhost:3000/api/post/normal').then(response => {
+  this.$http.get(`${API_ROOT}api/post/normal`).then(response => {
     dispatch(types.GET_CONTENT_LIST, JSON.parse(response.body))
   }, error => {
     dispatch(types.GET_CONTENT_LIST_FAILURE, error)
@@ -19,14 +19,15 @@ export const updateHeadline = ({dispatch}, value) => {
 }
 
 //  获取文章内容, 清除文章
-export const getArticle = function ({dispatch}, id) {
-  this.$http.get(API_ROOT + 'api/article/' + id).then(response => {
+export const getPost = function ({dispatch}, title) {
+  this.$http.get(`${API_ROOT}api/post/normal/${title}`).then(response => {
     dispatch(types.GET_ARTICLE, JSON.parse(response.body))
   }, error => {
     dispatch(types.GET_ARTICLE_FAILURE, error)
   })
 }
-export const clearArticle = function ({dispatch}) {
+
+export const clearPost = function ({dispatch}) {
   dispatch(types.CLEAR_ARTICLE)
 }
 

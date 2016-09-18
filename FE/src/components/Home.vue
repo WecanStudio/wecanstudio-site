@@ -2,10 +2,10 @@
   <div class="list-wrapper">
     <ul class="list-container" id="list-ul">
       <li v-for="item in items">
-        <a v-link="{ name: 'article', params: {id: item.objectId}}">
+        <a v-link="{ name: 'post', params: {title: item.title}}">
           <p class="list-title">{{item.title}}</p>
-          <p class="list-updated">{{item.createdAt}}</p>
-          <p class="list-abstract">{{item.abstract}}</p>
+          <p class="list-updated">{{item.time}}</p>
+          <p class="list-abstract">{{item.content}}</p>
         </a>
       </li>
     </ul>
@@ -13,18 +13,18 @@
 </template>
 
 <script type="text/babel">
-  // import {contentList} from '../vuex/getters'
-  import {getContentList, updateHeadline} from '../vuex/actions'
+  import {getPostsList, updateHeadline} from '../vuex/actions'
 
   export default {
     vuex: {
+      // 该 getter 函数将会把仓库的 `store.postsList.postsList` 绑定为组件的 `items`
       getters: {
-        items: function () {
-          return []
+        items: function ({postsList}) {
+          return postsList.postsList
         }
       },
       actions: {
-        getPostsList: getContentList,
+        getPostsList: getPostsList,
         updateHeadline: updateHeadline
       }
     },
@@ -64,7 +64,7 @@
     padding: 1rem 1.5rem;
     display: block;
     transition: all .3s;
-    margin:0;
+    margin: 0;
   }
 
   .list-container li a:hover {

@@ -2,7 +2,7 @@ import {REQUEST_CONTENT_LIST, GET_CONTENT_LIST, GET_CONTENT_LIST_FAILURE} from '
 
 const state = {
   isFetching: false,
-  contentList: []
+  postsList: []
 }
 
 const mutations = {
@@ -11,10 +11,10 @@ const mutations = {
   },
   [GET_CONTENT_LIST] (state, items) {
     state.isFetching = false
-    state.contentList = items
+    state.postsList = items
   },
   [GET_CONTENT_LIST_FAILURE] (state) {
-    state.isFetching = false
+    state.postsList = false
   }
 }
 

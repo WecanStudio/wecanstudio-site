@@ -5,7 +5,4 @@ start.sh
 # VIM
 *~
 *.swp
-.avoscloud/
-.idea/
-fe/.idea/.avoscloud/
 npm-debug.log

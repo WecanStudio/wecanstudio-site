@@ -36,8 +36,8 @@
 </template>
 
 <script type="text/babel">
-  import { getCommentsList, submitComment } from '../vuex/actions'
-  import { commentsList } from '../vuex/getters'
+  import {getCommentsList, submitComment} from '../vuex/actions'
+  import {commentsList} from '../vuex/getters'
 
   export default {
     data () {

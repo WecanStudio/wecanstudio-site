@@ -32,10 +32,10 @@ router.map({
       require(['./components/Tags'], resolve)
     }
   },
-  '/article/:id': {
-    name: 'article',
+  '/post/normal/:title': {
+    name: 'post',
     component: function (resolve) {
-      require(['./components/Article'], resolve)
+      require(['./components/Post'], resolve)
     }
   }
 

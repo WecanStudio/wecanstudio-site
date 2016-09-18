@@ -1,4 +1,4 @@
-import { GET_COMMENTS_LIST, GET_COMMENTS_LIST_FAILURE, SUBMIT_COMMENT, SUBMIT_COMMENT_FAILURE } from '../mutation-types'
+import {GET_COMMENTS_LIST, GET_COMMENTS_LIST_FAILURE, SUBMIT_COMMENT, SUBMIT_COMMENT_FAILURE} from '../mutation-types'
 
 const state = {
   commentsList: []

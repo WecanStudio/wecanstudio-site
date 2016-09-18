@@ -7,7 +7,7 @@
 </template>
 
 <script type="text/babel">
-  import { updateHeadline } from '../vuex/actions'
+  import {updateHeadline} from '../vuex/actions'
   export default {
     vuex: {
       actions: {
