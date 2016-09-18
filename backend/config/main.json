@@ -1,0 +1,7 @@
+  {
+    "port": 3000,
+    "whiteOrigins": [
+      "http://loalhost:8080",
+      "http://localhost:3000"
+    ]
+  }

@@ -1,0 +1,7 @@
+{
+  "mongoUrl": "mongodb://localhost",
+  "cookieSecret": "wecanstudio",
+  "dbName": "wecanstudio",
+  "host": "localhost",
+  "port": 27017
+}
