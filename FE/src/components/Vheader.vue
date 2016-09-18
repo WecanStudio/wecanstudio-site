@@ -6,10 +6,13 @@
         <a v-link="'/home'">主页</a>
       </li>
       <li>
+        <a v-link="'/timeline'">时间线</a>
+      </li>
+      <li>
         <a v-link="'/about'">关于</a>
       </li>
       <li>
-        <a v-link="'/tags'">标签</a>
+        <a v-link="'/recruit'">招新</a>
       </li>
     </ul>
     <div class="header-title"><h1 v-if="show" transition="fade">{{headlineFinal}}</h1></div>
@@ -17,7 +20,7 @@
 </template>
 
 <script type="text/babel">
-  import { headline } from '../vuex/getters'
+  import {headline} from '../vuex/getters'
 
   export default {
     data () {

@@ -27,9 +27,14 @@ router.map({
       require(['./components/About'], resolve)
     }
   },
-  '/tags': {
+  '/recruit': {
     component: function (resolve) {
-      require(['./components/Tags'], resolve)
+      require(['./components/Recruit'], resolve)
+    }
+  },
+  '/timeline': {
+    component: function (resolve) {
+      require(['./components/Timeline'], resolve)
     }
   },
   '/post/normal/:title': {
