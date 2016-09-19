@@ -78,7 +78,7 @@ Post.getPostByTag = function(tag, callback) {
   });
 };
 
-Post.getAvaliableTags = function(callback) {
+Post.getAvailableTags = function(callback) {
   mongodb.open(function(err, db) {
     if (err) {
       return callback(err);

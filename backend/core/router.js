@@ -1,14 +1,15 @@
 'use strict';
+/**
+ * 这个文件中保存了所有的路由信息，而这些路由指向的是 controller 中的方法
+ */
 const router = require('express').Router();
 const postController = require('../controllers/post');
 
-// 博客文章列表
 router.get('/post/:category', postController.getAllPosts);
 
 router.get('/post/:category/:title', postController.getOnePost);
 
-// tags
-router.get('/tags', postController.getAvaliableTags);
+router.get('/tags', postController.getAvailableTags);
 
 router.get('/tags/:tag', postController.getPostsByTag);
 

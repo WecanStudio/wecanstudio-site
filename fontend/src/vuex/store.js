@@ -4,8 +4,7 @@ import postsList from './modules/postsList'
 import headline from './modules/headline'
 import post from './modules/post'
 import tags from './modules/tags'
-import tagContentList from './modules/tagContentList'
-import commentsList from './modules/commentsList'
+import tagPostsList from './modules/tagPostsList'
 
 Vue.use(Vuex)
 Vue.config.debug = true
@@ -19,7 +18,6 @@ export default new Vuex.Store({
     headline: headline,
     post: post,
     tags: tags,
-    tagContentList: tagContentList,
-    commentsList: commentsList
+    tagPostsList: tagPostsList
   }
 })

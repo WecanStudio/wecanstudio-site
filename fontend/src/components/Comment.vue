@@ -2,15 +2,15 @@
   <div class="comment">
     <h2>所有评论</h2>
     <ul class="comments-list">
-      <li class="comment-item" v-for="item in commentsList">
+      <li class="comment-item" v-for="item in comments">
         <div class="comment-item-title">
-          <p class="comment-item-name">{{item.name}}</p>
+          <p class="comment-item-name">{{ item.name }}</p>
           <p class="comment-item-createdAt">{{item.time}}</p>
         </div>
-        <p class="comment-item-content">{{item.content}}</p>
+        <p class="comment-item-content">{{ item.content }}</p>
       </li>
     </ul>
-    <h2 id="comment-form-title">发表评论{{replyName}}</h2>
+    <h2 id="comment-form-title">发表评论</h2>
     <div class="comment-form">
       <input v-model="formName" class="comment-form-name" type="text" placeholder="昵称" maxlength="20">
       <!--suppress CheckTagEmptyBody -->
@@ -39,7 +39,7 @@
         submitComment: submitComment
       },
       getters: {
-        commentsList: function ({post}) {
+        comments: function ({post}) {
           return post.comments
         }
       }
@@ -56,6 +56,7 @@
           content: this.formContent,
           title: this.title
         }
+        // noinspection JSUnresolvedFunction
         this.submitComment(data)
         this.formName = ''
         this.formContent = ''

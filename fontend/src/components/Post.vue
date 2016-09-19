@@ -43,7 +43,7 @@
     computed: {
       content: function () {
         this.updateHeadline(this.post.title)
-        return this.post.content
+        return marked(this.post.content)
       }
     }
   }

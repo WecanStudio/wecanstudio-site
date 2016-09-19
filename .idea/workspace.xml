@@ -2,23 +2,71 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bee534e0-fa78-4168-93cb-b1367e7ecbaa" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/xhinliang.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/xhinliang.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/FE/.babelrc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/FE/.editorconfig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/FE/.eslintignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/FE/.eslintrc.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/FE/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/FE/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/FE/build/build.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/FE/build/dev-client.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/FE/build/dev-server.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/FE/build/utils.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/FE/build/webpack.base.conf.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/FE/build/webpack.dev.conf.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/FE/build/webpack.prod.conf.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/FE/config/dev.env.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/FE/config/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/FE/config/prod.env.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/FE/config/test.env.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/FE/favicon.ico" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/FE/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/FE/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/FE/src/App.vue" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/FE/src/assets/banner.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/FE/src/assets/banner1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/FE/src/components/About.vue" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/FE/src/components/Comment.vue" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/FE/src/components/Home.vue" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/FE/src/components/Post.vue" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/FE/src/components/Recruit.vue" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/FE/src/components/TagContentList.vue" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/FE/src/components/Tags.vue" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/FE/src/components/Timeline.vue" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/FE/src/components/Vfooter.vue" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/FE/src/components/Vheader.vue" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/FE/src/config.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/FE/src/directives/v-click.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/FE/src/main.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/FE/src/vuex/actions.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/FE/src/vuex/getters.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/FE/src/vuex/modules/commentsList.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/FE/src/vuex/modules/headline.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/FE/src/vuex/modules/post.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/FE/src/vuex/modules/postsList.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/FE/src/vuex/modules/tagContentList.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/FE/src/vuex/modules/tags.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/FE/src/vuex/mutation-types.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/FE/src/vuex/store.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/FE/static/.gitkeep" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/fontend/src/vuex/modules/commentsList.js" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/fontend/src/vuex/modules/tagContentList.js" afterPath="$PROJECT_DIR$/fontend/src/vuex/modules/tagPostsList.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FE/src/components/Comment.vue" afterPath="$PROJECT_DIR$/FE/src/components/Comment.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FE/src/components/Home.vue" afterPath="$PROJECT_DIR$/FE/src/components/Home.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FE/src/components/Post.vue" afterPath="$PROJECT_DIR$/FE/src/components/Post.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FE/src/components/Timeline.vue" afterPath="$PROJECT_DIR$/FE/src/components/Timeline.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FE/src/main.js" afterPath="$PROJECT_DIR$/FE/src/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FE/src/vuex/actions.js" afterPath="$PROJECT_DIR$/FE/src/vuex/actions.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FE/src/vuex/getters.js" afterPath="$PROJECT_DIR$/FE/src/vuex/getters.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FE/src/vuex/modules/post.js" afterPath="$PROJECT_DIR$/FE/src/vuex/modules/post.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FE/src/vuex/modules/postsList.js" afterPath="$PROJECT_DIR$/FE/src/vuex/modules/postsList.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FE/src/vuex/mutation-types.js" afterPath="$PROJECT_DIR$/FE/src/vuex/mutation-types.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/controllers/post.js" afterPath="$PROJECT_DIR$/backend/controllers/post.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/core/restore.js" afterPath="$PROJECT_DIR$/backend/core/restore.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/core/router.js" afterPath="$PROJECT_DIR$/backend/core/router.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/models/comment.js" afterPath="$PROJECT_DIR$/backend/models/comment.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/models/post.js" afterPath="$PROJECT_DIR$/backend/models/post.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backup/backup.json" afterPath="$PROJECT_DIR$/backup/backup.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fontend/src/components/Comment.vue" afterPath="$PROJECT_DIR$/fontend/src/components/Comment.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fontend/src/components/Post.vue" afterPath="$PROJECT_DIR$/fontend/src/components/Post.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fontend/src/vuex/actions.js" afterPath="$PROJECT_DIR$/fontend/src/vuex/actions.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fontend/src/vuex/modules/post.js" afterPath="$PROJECT_DIR$/fontend/src/vuex/modules/post.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fontend/src/vuex/mutation-types.js" afterPath="$PROJECT_DIR$/fontend/src/vuex/mutation-types.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fontend/src/vuex/store.js" afterPath="$PROJECT_DIR$/fontend/src/vuex/store.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/static/js/0.0bfc9319925f6b6c52f3.js" afterPath="$PROJECT_DIR$/public/static/js/0.0bfc9319925f6b6c52f3.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/static/js/1.8f2c7c675b1715208bb2.js" afterPath="$PROJECT_DIR$/public/static/js/1.8f2c7c675b1715208bb2.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/static/js/2.44af435f4e9ace756e4e.js" afterPath="$PROJECT_DIR$/public/static/js/2.44af435f4e9ace756e4e.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/static/js/3.5cb8b53935be03ff4a6c.js" afterPath="$PROJECT_DIR$/public/static/js/3.5cb8b53935be03ff4a6c.js" />
     </list>
     <ignored path="wecanstudio.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -41,11 +89,33 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Post.vue" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FE/src/components/Post.vue">
+      <file leaf-file-name="actions.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fontend/src/vuex/actions.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="42" column="3" selection-start-line="42" selection-start-column="3" selection-end-line="42" selection-end-column="3" />
+            <state relative-caret-position="288">
+              <caret line="61" column="9" selection-start-line="61" selection-start-column="9" selection-end-line="61" selection-end-column="9" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="post.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fontend/src/vuex/modules/post.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="9" column="2" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Post.vue" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/fontend/src/components/Post.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="234">
+              <caret line="44" column="39" selection-start-line="44" selection-start-column="39" selection-end-line="44" selection-end-column="39" />
               <folding>
                 <element signature="e#166#193#0" expanded="true" />
               </folding>
@@ -53,61 +123,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Recruit.vue" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FE/src/components/Recruit.vue">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fontend/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+            <state relative-caret-position="108">
+              <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Comment.vue" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/FE/src/components/Comment.vue">
+      <file leaf-file-name="postsList.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fontend/src/vuex/modules/postsList.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="40" column="15" selection-start-line="40" selection-start-column="15" selection-end-line="40" selection-end-column="15" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Home.vue" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FE/src/components/Home.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="About.vue" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FE/src/components/About.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="router.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/core/router.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="14" column="54" selection-start-line="14" selection-start-column="54" selection-end-line="14" selection-end-column="54" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="comment.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/models/comment.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="4" column="43" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
+            <state relative-caret-position="113">
+              <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -148,14 +178,23 @@
         <option value="$PROJECT_DIR$/FE/src/vuex/mutation-types.js" />
         <option value="$PROJECT_DIR$/FE/src/vuex/modules/postsList.js" />
         <option value="$PROJECT_DIR$/FE/src/vuex/getters.js" />
-        <option value="$PROJECT_DIR$/backend/core/router.js" />
         <option value="$PROJECT_DIR$/FE/src/vuex/actions.js" />
         <option value="$PROJECT_DIR$/backend/models/post.js" />
-        <option value="$PROJECT_DIR$/backup/backup.json" />
         <option value="$PROJECT_DIR$/backend/core/restore.js" />
         <option value="$PROJECT_DIR$/backend/models/comment.js" />
-        <option value="$PROJECT_DIR$/backend/controllers/post.js" />
         <option value="$PROJECT_DIR$/FE/src/components/Comment.vue" />
+        <option value="$PROJECT_DIR$/fontend/node_modules/vuex/src/index.js" />
+        <option value="$PROJECT_DIR$/fontend/src/vuex/mutation-types.js" />
+        <option value="$PROJECT_DIR$/fontend/src/vuex/modules/tagPostsList.js" />
+        <option value="$PROJECT_DIR$/fontend/src/vuex/store.js" />
+        <option value="$PROJECT_DIR$/fontend/src/vuex/actions.js" />
+        <option value="$PROJECT_DIR$/fontend/src/vuex/modules/commentsList.js" />
+        <option value="$PROJECT_DIR$/fontend/src/components/Comment.vue" />
+        <option value="$PROJECT_DIR$/backend/controllers/post.js" />
+        <option value="$PROJECT_DIR$/backend/core/router.js" />
+        <option value="$PROJECT_DIR$/fontend/src/vuex/modules/post.js" />
+        <option value="$PROJECT_DIR$/backup/backup.json" />
+        <option value="$PROJECT_DIR$/fontend/src/components/Post.vue" />
       </list>
     </option>
   </component>
@@ -166,7 +205,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="NodeModulesDirectoryManager">
-    <handled-path value="$PROJECT_DIR$/FE/node_modules" />
+    <handled-path value="$PROJECT_DIR$/backend/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="-4" />
@@ -226,68 +265,14 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="FE" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wecanstudio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wecanstudio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FE" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wecanstudio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wecanstudio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FE" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wecanstudio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wecanstudio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backup" />
+              <option name="myItemId" value="fontend" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -295,8 +280,8 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="editor.config.accepted" value="true" />
-    <property name="SearchEverywhereHistoryKey" value="com&#9;FILE&#9;file:///home/xhinliang/code/fontend/dev_2016_9/wecanstudio/FE/src/components/Comment.vue&#10;pos&#9;FILE&#9;file:///home/xhinliang/code/fontend/dev_2016_9/wecanstudio/backend/controllers/post.js&#10;main&#9;FILE&#9;file:///home/xhinliang/code/fontend/dev_2016_9/wecanstudio/backend/config/main.json&#10;post.js&#9;FILE&#9;file:///home/xhinliang/code/fontend/dev_2016_9/wecanstudio/backend/models/post.js&#10;action&#9;FILE&#9;file:///home/xhinliang/code/fontend/dev_2016_9/wecanstudio/FE/src/vuex/actions.js&#10;act&#9;FILE&#9;file:///home/xhinliang/code/fontend/dev_2016_9/wecanstudio/FE/src/vuex/actions.js&#10;post&#9;FILE&#9;file:///home/xhinliang/code/fontend/dev_2016_9/wecanstudio/FE/src/components/Post.vue&#10;get&#9;FILE&#9;file:///home/xhinliang/code/fontend/dev_2016_9/wecanstudio/FE/src/vuex/getters.js&#10;ar&#9;FILE&#9;file:///home/xhinliang/code/fontend/dev_2016_9/wecanstudio/FE/src/components/Article.vue&#10;h&#9;FILE&#9;file:///home/xhinliang/code/fontend/dev_2016_9/wecanstudio/FE/src/components/Home.vue&#10;vhea&#9;FILE&#9;file:///home/xhinliang/code/fontend/dev_2016_9/wecanstudio/FE/src/components/Vheader.vue&#10;contenl&#9;FILE&#9;file:///home/xhinliang/code/fontend/dev_2016_9/wecanstudio/FE/src/vuex/modules/contentList.js&#10;st&#9;FILE&#9;file:///home/xhinliang/code/fontend/dev_2016_9/wecanstudio/FE/src/vuex/store.js&#10;app&#9;FILE&#9;file:///home/xhinliang/code/fontend/dev_2016_9/wecanstudio/backend/core/app.js&#10;conf&#9;FILE&#9;file:///home/xhinliang/code/fontend/dev_2016_9/wecanstudio/FE/src/config.js&#10;main.json&#9;FILE&#9;file:///home/xhinliang/code/fontend/dev_2016_9/wecanstudio/backend/config/main.json&#10;confi&#9;FILE&#9;file:///home/xhinliang/code/fontend/dev_2016_9/wecanstudio/FE/src/config.js&#10;plugin&#9;ACTION&#9;WelcomeScreen.Plugins" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Font" />
+    <property name="SearchEverywhereHistoryKey" value="post.v&#9;FILE&#9;file:///home/xhinliang/code/fontend/dev_2016_9/wecanstudio/fontend/src/components/Post.vue&#10;timeli&#9;FILE&#9;file:///home/xhinliang/code/fontend/dev_2016_9/wecanstudio/fontend/src/components/Timeline.vue&#10;pos&#9;FILE&#9;file:///home/xhinliang/code/fontend/dev_2016_9/wecanstudio/backend/controllers/post.js&#10;rout&#9;FILE&#9;file:///home/xhinliang/code/fontend/dev_2016_9/wecanstudio/backend/core/router.js&#10;post.js&#9;FILE&#9;file:///home/xhinliang/code/fontend/dev_2016_9/wecanstudio/backend/controllers/post.js&#10;com&#9;FILE&#9;file:///home/xhinliang/code/fontend/dev_2016_9/wecanstudio/fontend/src/components/Comment.vue&#10;po&#9;FILE&#9;file:///home/xhinliang/code/fontend/dev_2016_9/wecanstudio/fontend/src/vuex/modules/post.js&#10;tags&#9;FILE&#9;file:///home/xhinliang/code/fontend/dev_2016_9/wecanstudio/fontend/src/vuex/modules/tags.js&#10;muty&#9;FILE&#9;file:///home/xhinliang/code/fontend/dev_2016_9/wecanstudio/fontend/src/vuex/mutation-types.js&#10;comm&#9;ACTION&#9;CheckinProject&#10;main.js&#9;FILE&#9;file:///home/xhinliang/code/fontend/dev_2016_9/wecanstudio/fontend/src/main.js&#10;app.v&#9;FILE&#9;file:///home/xhinliang/code/fontend/dev_2016_9/wecanstudio/fontend/src/App.vue&#10;app&#9;FILE&#9;file:///home/xhinliang/code/fontend/dev_2016_9/wecanstudio/backend/core/app.js&#10;Post.v&#9;FILE&#9;file:///home/xhinliang/code/fontend/dev_2016_9/wecanstudio/fontend/src/components/Post.vue&#10;post&#9;FILE&#9;file:///home/xhinliang/code/fontend/dev_2016_9/wecanstudio/fontend/src/vuex/modules/postsList.js&#10;commen.v&#9;FILE&#9;file:///home/xhinliang/code/fontend/dev_2016_9/wecanstudio/fontend/src/components/Comment.vue&#10;main&#9;FILE&#9;file:///home/xhinliang/code/fontend/dev_2016_9/wecanstudio/backend/config/main.json&#10;action&#9;FILE&#9;file:///home/xhinliang/code/fontend/dev_2016_9/wecanstudio/FE/src/vuex/actions.js&#10;act&#9;FILE&#9;file:///home/xhinliang/code/fontend/dev_2016_9/wecanstudio/FE/src/vuex/actions.js&#10;get&#9;FILE&#9;file:///home/xhinliang/code/fontend/dev_2016_9/wecanstudio/FE/src/vuex/getters.js&#10;ar&#9;FILE&#9;file:///home/xhinliang/code/fontend/dev_2016_9/wecanstudio/FE/src/components/Article.vue&#10;h&#9;FILE&#9;file:///home/xhinliang/code/fontend/dev_2016_9/wecanstudio/FE/src/components/Home.vue&#10;vhea&#9;FILE&#9;file:///home/xhinliang/code/fontend/dev_2016_9/wecanstudio/FE/src/components/Vheader.vue&#10;contenl&#9;FILE&#9;file:///home/xhinliang/code/fontend/dev_2016_9/wecanstudio/FE/src/vuex/modules/contentList.js&#10;st&#9;FILE&#9;file:///home/xhinliang/code/fontend/dev_2016_9/wecanstudio/FE/src/vuex/store.js&#10;conf&#9;FILE&#9;file:///home/xhinliang/code/fontend/dev_2016_9/wecanstudio/FE/src/config.js&#10;main.json&#9;FILE&#9;file:///home/xhinliang/code/fontend/dev_2016_9/wecanstudio/backend/config/main.json&#10;confi&#9;FILE&#9;file:///home/xhinliang/code/fontend/dev_2016_9/wecanstudio/FE/src/config.js&#10;plugin&#9;ACTION&#9;WelcomeScreen.Plugins" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.completion" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="nodejs_interpreter_path" value="/usr/bin/node" />
     <property name="js-jscs-nodeInterpreter" value="/usr/bin/node" />
@@ -332,6 +317,12 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -370,25 +361,26 @@
       <updated>1474125617395</updated>
       <workItem from="1474125619388" duration="505000" />
       <workItem from="1474126137111" duration="32664000" />
+      <workItem from="1474252073230" duration="6294000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33169000" />
+    <option name="totallyTimeSpent" value="39463000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-4" width="1366" height="772" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20820668" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19072948" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="SvgViewer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="SvgViewer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44827586" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26489028" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12068965" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12068965" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -417,115 +409,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/FE/src/App.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FE/.eslintrc.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FE/.eslintrc.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FE/src/components/Vfooter.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/core/backup.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FE/src/config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="46" selection-start-line="0" selection-start-column="46" selection-end-line="0" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FE/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/core/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="45" column="2" selection-start-line="45" selection-start-column="2" selection-end-line="45" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fontend/src/vuex/modules/postsList.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="10" column="2" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FE/src/vuex/modules/commentsList.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FE/src/vuex/modules/tagContentList.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" column="15" selection-start-line="13" selection-start-column="15" selection-end-line="13" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FE/src/vuex/modules/tags.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="7" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/FE/src/components/Tags.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -533,80 +420,21 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="21" column="18" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
-          <folding>
-            <element signature="e#460#530#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/site/js/easing.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-126">
-          <caret line="62" column="57" selection-start-line="62" selection-start-column="57" selection-end-line="62" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/site/js/jquery.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="1" column="1032" selection-start-line="1" selection-start-column="1032" selection-end-line="1" selection-end-column="1032" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/site/images/team-member2.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/site/js/wow.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="34" selection-start-line="1" selection-start-column="34" selection-end-line="1" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/site/js/move-top.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/site/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="1452" column="15" selection-start-line="1452" selection-start-column="15" selection-end-line="1452" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/site/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="74" column="55" selection-start-line="74" selection-start-column="55" selection-end-line="74" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/site/rec.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/site/js/easing.js" />
+    <entry file="file://$PROJECT_DIR$/site/js/jquery.min.js" />
+    <entry file="file://$PROJECT_DIR$/site/images/team-member2.jpg" />
+    <entry file="file://$PROJECT_DIR$/site/js/wow.min.js" />
+    <entry file="file://$PROJECT_DIR$/site/js/move-top.js" />
+    <entry file="file://$PROJECT_DIR$/site/css/style.css" />
+    <entry file="file://$PROJECT_DIR$/site/index.html" />
+    <entry file="file://$PROJECT_DIR$/site/rec.php" />
     <entry file="file://$PROJECT_DIR$/FE/src/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
           <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#21#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -614,7 +442,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
           <caret line="44" column="32" selection-start-line="44" selection-start-column="32" selection-end-line="44" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -622,7 +449,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
           <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -630,7 +456,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
           <caret line="13" column="41" selection-start-line="13" selection-start-column="41" selection-end-line="13" selection-end-column="41" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -638,7 +463,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="15" column="15" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -646,7 +470,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -654,7 +477,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="24" selection-start-line="0" selection-start-column="24" selection-end-line="0" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -662,9 +484,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="414">
           <caret line="23" column="2" selection-start-line="23" selection-start-column="2" selection-end-line="23" selection-end-column="2" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -672,7 +491,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-18">
           <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -680,7 +498,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -688,17 +505,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="385">
           <caret line="51" column="34" selection-start-line="51" selection-start-column="34" selection-end-line="51" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#41#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/core/router.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="54" selection-start-line="14" selection-start-column="54" selection-end-line="14" selection-end-column="54" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -706,15 +512,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="24" column="6" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/models/post.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="38" column="17" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -722,22 +519,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
           <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backup/backup.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="43" column="4" selection-start-line="43" selection-start-column="4" selection-end-line="43" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/controllers/post.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="65" column="18" selection-start-line="65" selection-start-column="18" selection-end-line="65" selection-end-column="18" />
           <folding />
         </state>
       </provider>
@@ -774,6 +555,7 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/FE/src/components/Comment.vue" />
     <entry file="file://$PROJECT_DIR$/FE/src/components/Recruit.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -784,19 +566,185 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/FE/src/components/Post.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
+        <state relative-caret-position="18">
           <caret line="42" column="3" selection-start-line="42" selection-start-column="3" selection-end-line="42" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fontend/src/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="15" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
           <folding>
-            <element signature="e#166#193#0" expanded="true" />
+            <element signature="e#0#21#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FE/src/components/Comment.vue">
+    <entry file="file://$PROJECT_DIR$/fontend/src/App.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="40" column="15" selection-start-line="40" selection-start-column="15" selection-end-line="40" selection-end-column="15" />
+        <state relative-caret-position="1872">
+          <caret line="106" column="0" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/core/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="31" column="8" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fontend/node_modules/vuex/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="72" column="13" selection-start-line="72" selection-start-column="13" selection-end-line="72" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fontend/src/vuex/modules/tags.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fontend/src/vuex/store.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="20" column="29" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#21#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fontend/src/vuex/modules/commentsList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="15" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fontend/src/vuex/mutation-types.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" column="42" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fontend/src/components/Comment.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="60" column="10" selection-start-line="60" selection-start-column="10" selection-end-line="60" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fontend/src/vuex/actions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="61" column="9" selection-start-line="61" selection-start-column="9" selection-end-line="61" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fontend/src/vuex/modules/tagPostsList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/core/router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="12" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/models/post.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="83" column="26" selection-start-line="83" selection-start-column="26" selection-end-line="83" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/controllers/post.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="4" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fontend/src/vuex/modules/postsList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backup/backup.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="136" column="4" selection-start-line="136" selection-start-column="4" selection-end-line="136" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fontend/src/components/Timeline.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-918">
+          <caret line="6" column="37" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fontend/src/vuex/modules/headline.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="2" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fontend/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fontend/src/vuex/modules/post.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="2" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fontend/src/components/Post.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="44" column="39" selection-start-line="44" selection-start-column="39" selection-end-line="44" selection-end-column="39" />
+          <folding>
+            <element signature="e#166#193#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
