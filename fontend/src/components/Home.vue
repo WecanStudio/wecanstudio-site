@@ -15,7 +15,7 @@
       }
     },
     created () {
-      this.updateHeadline('关于')
+      this.updateHeadline('微客工作室')
     }
   }
 </script>

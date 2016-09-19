@@ -2,13 +2,14 @@
 
 const tool = require('../core/tool');
 const Post = require('../models/post');
+const Comment = require('../models/comment');
 
 let pub = {};
 
 // 获取文章列表
 pub.getAllPosts = async(req, res) => {
   let category = req.params.category;
-  Post.getAll(category, function(err, docs) {
+  Post.getAll(category, function (err, docs) {
     if (err) {
       tool.l(err);
       res.send([]);
@@ -23,7 +24,7 @@ pub.addPost = async(req, res) => {
   let tags = req.params.tags;
   let category = req.params.category;
   let post = new Post(category, title, tags, content);
-  post.save(function(err) {
+  post.save(function (err) {
     if (err) {
       tool.l(err);
       res.status(500);
@@ -36,7 +37,7 @@ pub.addPost = async(req, res) => {
 pub.getOnePost = async(req, res) => {
   let category = req.params.category;
   let title = req.params.title;
-  Post.getOne(category, title, function(err, docs) {
+  Post.getOne(category, title, function (err, docs) {
     if (err) {
       tool.l(err);
       res.send([]);
@@ -47,7 +48,7 @@ pub.getOnePost = async(req, res) => {
 
 pub.getPostsByTag = async(req, res) => {
   let tag = req.params.tag;
-  Post.getPostByTag(tag, function(err, docs) {
+  Post.getPostByTag(tag, function (err, docs) {
     if (err) {
       tool.l(err);
       res.send([]);
@@ -57,7 +58,7 @@ pub.getPostsByTag = async(req, res) => {
 }
 
 pub.getAvaliableTags = async(req, res) => {
-  Post.getAvaliableTags(function(err, tags) {
+  Post.getAvaliableTags(function (err, tags) {
     if (err) {
       tool.debug(err);
       res.send([]);
@@ -67,11 +68,12 @@ pub.getAvaliableTags = async(req, res) => {
 }
 
 pub.addComment = async(req, res) => {
-  let category = req.params.category;
-  let title = req.params.title;
-  let commentContent = req.params.comment;
-  let comment = new Comment(category, title, commentContent);
-  comment.save(function(err) {
+  let category = req.body.category;
+  let title = req.body.title;
+  let content = req.body.content;
+  let name = req.body.name;
+  let comment = new Comment(category, title, content, name);
+  comment.save(function (err) {
     if (err) {
       tool.l(err);
       res.status(500);

@@ -12,6 +12,6 @@ router.get('/tags', postController.getAvaliableTags);
 
 router.get('/tags/:tag', postController.getPostsByTag);
 
-router.post('/comments/submitComment', postController.addComment);
+router.post('/submitComment', postController.addComment);
 
 module.exports = router;

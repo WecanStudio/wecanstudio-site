@@ -1,33 +1,37 @@
 'use strict';
 const mongodb = require('../core/db');
+const tool = require('../core/tool');
 
-function Comment(category, title, comment) {
+function Comment(category, title, content, username) {
   this.category = category;
   this.title = title;
-  this.comment = comment;
+  this.content = content;
+  this.leavename = username;
 }
 
-Comment.prototype.save = function(callback) {
-  let category = this.category;
-  let title = this.title;
-  let content = this.content;
-  mongodb.open(function(err, db) {
+Comment.prototype.save = function (callback) {
+  let comment = this;
+  mongodb.open(function (err, db) {
     if (err) {
       return callback(err);
     }
-    db.collection('posts', function(err, collection) {
+    db.collection('posts', function (err, collection) {
       if (err) {
         mongodb.close();
         return callback(err);
       }
+      tool.l(`add comment ${comment.category} ${comment.title}`);
       collection.update({
-        "category": name,
-        "title": title
+        "category": comment.category,
+        "title": comment.title
       }, {
         $push: {
-          "comments": comment
+          "comments": {
+            content: comment.content,
+            name: comment.leavename
+          }
         }
-      }, function(err) {
+      }, function (err) {
         mongodb.close();
         if (err) {
           return callback(err);
