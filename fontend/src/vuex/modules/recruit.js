@@ -1,32 +1,12 @@
-import {GET_POST, GET_POST_FAILURE, CLEAR_POST, SUBMIT_COMMENT, SUBMIT_COMMENT_FAILURE} from '../mutation-types'
+import {SUBMIT_RESUME, SUBMIT_RESUME_FAILURE} from '../mutation-types'
 
-const state = {
-  time: '',
-  content: '',
-  title: '',
-  comments: []
-}
+const state = {}
 
 const mutations = {
-  [GET_POST] (state, data) {
-    state.content = data.content
-    state.time = data.time
-    state.title = data.title
-    state.comments = data.comments
+  [SUBMIT_RESUME] (state, data) {
+    window.alert('提交成功')
   },
-  [GET_POST_FAILURE] (state) {
-    return state
-  },
-  [CLEAR_POST] (state) {
-    state.time = ''
-    state.content = ''
-    state.title = ''
-    state.comments = []
-  },
-  [SUBMIT_COMMENT] (state, data) {
-    state.comments.push(data)
-  },
-  [SUBMIT_COMMENT_FAILURE] (state) {
+  [SUBMIT_RESUME_FAILURE] (state) {
     return state
   }
 }

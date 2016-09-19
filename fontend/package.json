@@ -1,20 +1,18 @@
 {
-  "name": "fe",
-  "version": "1.0.0",
-  "description": "A Vue.js project",
-  "author": "zhangsiyuan <1021808625@qq.com>",
-  "private": true,
+  "name": "fontend",
+  "version": "0.0.1",
+  "description": "Wecan Studio fontend using Vue.js",
+  "author": "xhinliang",
   "scripts": {
     "dev": "node build/dev-server.js",
     "build": "node build/build.js",
-    "test": "",
     "lint": "eslint --ext .js,.vue src test/unit/specs test/e2e/specs"
   },
   "dependencies": {
     "babel-runtime": "^6.0.0",
     "vue": "^1.0.21",
+    "vue-antd": "^0.2.9",
     "vue-router": "^0.7.13",
-    "vue-strap": "^1.0.11",
     "vuex": "^0.8.2"
   },
   "devDependencies": {

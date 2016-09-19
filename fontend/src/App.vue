@@ -6,7 +6,6 @@
     </div>
     <vfooter class="footer"></vfooter>
   </div>
-
 </template>
 
 <script type="text/babel">

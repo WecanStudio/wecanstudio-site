@@ -67,3 +67,15 @@ export const submitComment = function ({dispatch}, data) {
       })
     })
 }
+
+// 提交评论
+export const submitResume = function ({dispatch}, data) {
+  this
+    .$http
+    .post(`${API_ROOT}api/submitResume`, data)
+    .then(function (response) {
+      dispatch(types.SUBMIT_RESUME, JSON.parse(response.body), error => {
+        dispatch(types.SUBMIT_RESUME_FAILURE, error)
+      })
+    })
+}

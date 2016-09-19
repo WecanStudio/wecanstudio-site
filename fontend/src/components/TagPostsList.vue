@@ -4,7 +4,7 @@
       <li v-for="item in finalItems">
         <a v-link="{ name: 'article', params: {id: item.objectId}}">
           <p class="list-title">{{item.title}}</p>
-          <p class="list-updated">{{item.createdAt}}</p>
+          <p class="list-updated">{{item.time.date}}</p>
           <p class="list-abstract">{{item.abstract}}</p>
         </a>
       </li>
@@ -13,8 +13,8 @@
 </template>
 
 <script type="text/babel">
-  import {tagContentList, tagContentListId, tags} from '../vuex/getters'
-  import {getTagContentList, updateHeadline} from '../vuex/actions'
+  import {tagPostsList, tagPostsListId, tags} from '../vuex/getters'
+  import {getTagPostsList, updateHeadline} from '../vuex/actions'
 
   export default {
     data () {
@@ -25,12 +25,12 @@
     },
     vuex: {
       getters: {
-        items: tagContentList,
-        tagId: tagContentListId,
+        items: tagPostsList,
+        tagId: tagPostsListId,
         tags: tags
       },
       actions: {
-        getTagContentList: getTagContentList,
+        getTagContentList: getTagPostsList,
         updateHeadline: updateHeadline
       }
     },
@@ -44,7 +44,7 @@
       },
       'tags': function (val) {
         if (val) {
-          this.getTagContentList(val[0].objectId)
+          this.getTagPostsList(val[0].objectId)
           this.updateHeadline(val[0].tagName)
         }
       }

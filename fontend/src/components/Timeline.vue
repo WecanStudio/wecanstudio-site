@@ -4,8 +4,8 @@
       <li v-for="item in items">
         <a v-link="{ name: 'post', params: {title: item.title}}">
           <p class="list-title">{{item.title}}</p>
-          <p class="list-updated">{{item.time}}</p>
-          <p class="list-abstract">{{item.content}}</p>
+          <p class="list-updated">{{item.time.day}}</p>
+          <p class="list-abstract">{{item.abstract}}</p>
         </a>
       </li>
     </ul>

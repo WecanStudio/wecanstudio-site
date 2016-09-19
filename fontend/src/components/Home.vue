@@ -1,9 +1,5 @@
 <template>
-  <div class="about-wrapper">
-    <h2 class="list-title">微客工作室</h2>
-    <p>西安电子科技大学创新互联网团队</p>
-    <a href="https://github.com/wecanstudio">Github</a>
-  </div>
+  <iframe width="1200" height="3100" src="http://oldstudio.com" scrolling="no"></iframe>
 </template>
 
 <script type="text/babel">
@@ -52,6 +48,5 @@
     .about-wrapper p {
       font-size: 1.6rem;
     }
-
   }
 </style>

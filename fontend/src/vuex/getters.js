@@ -4,5 +4,6 @@ export const headline = function ({headline}) {
 
 export const tags = ({tags}) => tags.tagSet
 
-export const tagContentList = ({tagContentList}) => tagContentList.tagContentList
-export const tagContentListId = ({tagContentList}) => tagContentList.tagId
+export const tagPostsList = ({tagPostsList}) => tagPostsList.tagPostsList
+
+export const tag = ({tagPostsList}) => tagPostsList.tag

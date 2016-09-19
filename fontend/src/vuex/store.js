@@ -5,6 +5,7 @@ import headline from './modules/headline'
 import post from './modules/post'
 import tags from './modules/tags'
 import tagPostsList from './modules/tagPostsList'
+import recruit from './modules/recruit'
 
 Vue.use(Vuex)
 Vue.config.debug = true
@@ -18,6 +19,7 @@ export default new Vuex.Store({
     headline: headline,
     post: post,
     tags: tags,
+    recruit: recruit,
     tagPostsList: tagPostsList
   }
 })

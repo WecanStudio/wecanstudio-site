@@ -1,8 +1,5 @@
 node_modules
-start.sh
-.avoscloud
-
+backup/*
 # VIM
 *~
 *.swp
-npm-debug.log

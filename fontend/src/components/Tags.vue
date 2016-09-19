@@ -21,7 +21,7 @@
   export default {
     components: {
       TagContentList: function (resolve) {
-        require(['./TagContentList'], resolve)
+        require(['./TagPostsList'], resolve)
       }
     },
     data () {

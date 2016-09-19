@@ -2,6 +2,7 @@
 <project version="4">
   <component name="JavaScriptLibraryMappings">
     <file url="file://$PROJECT_DIR$/backend" libraries="{wecanstudio/backend/node_modules}" />
+    <file url="file://$PROJECT_DIR$/fontend" libraries="{wecanstudio/fontend/node_modules}" />
     <includedPredefinedLibrary name="ECMAScript 6" />
   </component>
 </project>

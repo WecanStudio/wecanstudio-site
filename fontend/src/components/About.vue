@@ -1,7 +1,7 @@
 <template>
   <div class="about-wrapper">
     <h2 class="list-title">微客工作室</h2>
-    <p>西安电子科技大学创新互联网团队</p>
+    <p>西安电子科技大学创新互联网团队，汇聚技术的地方</p>
     <a href="https://github.com/wecanstudio">Github</a>
   </div>
 </template>
