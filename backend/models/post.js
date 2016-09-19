@@ -1,14 +1,15 @@
 'use strict'
 const mongodb = require('../core/db');
 
-function Post(category, title, tags, post) {
+function Post(category, title, tags, post, abstract) {
   this.category = category;
   this.title = title;
   this.tags = tags;
   this.content = post;
+  this.abstract = abstract;
 }
 
-Post.prototype.save = function(callback) {
+Post.prototype.save = function (callback) {
   let date = new Date();
   let saveTime = {
     date: date,
@@ -26,18 +27,18 @@ Post.prototype.save = function(callback) {
     tags: this.tags,
     comments: []
   };
-  mongodb.open(function(err, db) {
+  mongodb.open(function (err, db) {
     if (err) {
       return callback(err);
     }
-    db.collection('posts', function(err, collection) {
+    db.collection('posts', function (err, collection) {
       if (err) {
         mongodb.close();
         return callback(err);
       }
       collection.insert(post, {
         safe: true
-      }, function(err) {
+      }, function (err) {
         mongodb.close();
         if (err) {
           return callback(err);
@@ -49,12 +50,12 @@ Post.prototype.save = function(callback) {
 };
 
 //返回含有特定标签的所有文章
-Post.getPostByTag = function(tag, callback) {
-  mongodb.open(function(err, db) {
+Post.getPostByTag = function (tag, callback) {
+  mongodb.open(function (err, db) {
     if (err) {
       return callback(err);
     }
-    db.collection('posts', function(err, collection) {
+    db.collection('posts', function (err, collection) {
       if (err) {
         mongodb.close();
         return callback(err);
@@ -67,7 +68,7 @@ Post.getPostByTag = function(tag, callback) {
         .sort({
           time: -1
         })
-        .toArray(function(err, docs) {
+        .toArray(function (err, docs) {
           mongodb.close();
           if (err) {
             return callback(err);
@@ -78,17 +79,17 @@ Post.getPostByTag = function(tag, callback) {
   });
 };
 
-Post.getAvailableTags = function(callback) {
-  mongodb.open(function(err, db) {
+Post.getAvailableTags = function (callback) {
+  mongodb.open(function (err, db) {
     if (err) {
       return callback(err);
     }
-    db.collection('posts', function(err, collection) {
+    db.collection('posts', function (err, collection) {
       if (err) {
         mongodb.close();
         return callback(err);
       }
-      collection.distinct('tags', function(err, docs) {
+      collection.distinct('tags', function (err, docs) {
         mongodb.close();
         if (err) {
           return callback(err);
@@ -99,12 +100,12 @@ Post.getAvailableTags = function(callback) {
   });
 };
 
-Post.getAll = function(category, callback) {
-  mongodb.open(function(err, db) {
+Post.getAll = function (category, callback) {
+  mongodb.open(function (err, db) {
     if (err) {
       return callback(err);
     }
-    db.collection('posts', function(err, collection) {
+    db.collection('posts', function (err, collection) {
       if (err) {
         mongodb.close();
         return callback(err);
@@ -118,7 +119,7 @@ Post.getAll = function(category, callback) {
         .sort({
           time: -1
         })
-        .toArray(function(err, docs) {
+        .toArray(function (err, docs) {
           mongodb.close();
           if (err) {
             return callback(err);
@@ -129,12 +130,12 @@ Post.getAll = function(category, callback) {
   });
 };
 
-Post.getLimit = function(category, limit, page, callback) {
-  mongodb.open(function(err, db) {
+Post.getLimit = function (category, limit, page, callback) {
+  mongodb.open(function (err, db) {
     if (err) {
       return callback(err);
     }
-    db.collection('posts', function(err, collection) {
+    db.collection('posts', function (err, collection) {
       if (err) {
         mongodb.close();
         return callback(err);
@@ -143,7 +144,7 @@ Post.getLimit = function(category, limit, page, callback) {
       if (name) {
         query.category = category;
       }
-      collection.count(query, function(err, total) {
+      collection.count(query, function (err, total) {
         collection
           .find(query, {
             skip: (page - 1) * limit,
@@ -152,7 +153,7 @@ Post.getLimit = function(category, limit, page, callback) {
           .sort({
             time: -1
           })
-          .toArray(function(err, docs) {
+          .toArray(function (err, docs) {
             mongodb.close();
             if (err) {
               return callback(err);
@@ -164,12 +165,12 @@ Post.getLimit = function(category, limit, page, callback) {
   });
 };
 
-Post.getOne = function(category, title, callback) {
-  mongodb.open(function(err, db) {
+Post.getOne = function (category, title, callback) {
+  mongodb.open(function (err, db) {
     if (err) {
       return callback(err);
     }
-    db.collection('posts', function(err, collection) {
+    db.collection('posts', function (err, collection) {
       if (err) {
         mongodb.close();
         return callback(err);
@@ -178,7 +179,7 @@ Post.getOne = function(category, title, callback) {
         .findOne({
           "category": category,
           "title": title
-        }, function(err, doc) {
+        }, function (err, doc) {
           mongodb.close();
           if (err) {
             return callback(err);
@@ -189,12 +190,12 @@ Post.getOne = function(category, title, callback) {
   });
 };
 
-Post.update = function(category, title, content, callback) {
-  mongodb.open(function(err, db) {
+Post.update = function (category, title, content, callback) {
+  mongodb.open(function (err, db) {
     if (err) {
       return callback(err);
     }
-    db.collection('posts', function(err, collection) {
+    db.collection('posts', function (err, collection) {
       if (err) {
         mongodb.close();
         return callback(err);
@@ -207,7 +208,7 @@ Post.update = function(category, title, content, callback) {
           $set: {
             content: content
           }
-        }, function(err) {
+        }, function (err) {
           mongodb.close();
           if (err) {
             return callback(err);
@@ -218,12 +219,12 @@ Post.update = function(category, title, content, callback) {
   });
 };
 
-Post.remove = function(category, title, callback) {
-  mongodb.open(function(err, db) {
+Post.remove = function (category, title, callback) {
+  mongodb.open(function (err, db) {
     if (err) {
       return callback(err);
     }
-    db.collection('posts', function(err, collection) {
+    db.collection('posts', function (err, collection) {
       if (err) {
         mongodb.close();
         return callback(err);
@@ -234,7 +235,7 @@ Post.remove = function(category, title, callback) {
           "title": title
         }, {
           w: 1
-        }, function(err) {
+        }, function (err) {
           mongodb.close();
           if (err) {
             return callback(err);

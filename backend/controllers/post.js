@@ -16,7 +16,7 @@ pub.getAllPosts = async(req, res) => {
     }
     res.send(docs);
   });
-}
+};
 
 // 增加一篇文章
 pub.addPost = async(req, res) => {
@@ -33,7 +33,7 @@ pub.addPost = async(req, res) => {
     }
     res.send('success');
   })
-}
+};
 
 // 获取一篇文章
 pub.getOnePost = async(req, res) => {
@@ -46,7 +46,7 @@ pub.getOnePost = async(req, res) => {
     }
     res.send(docs);
   });
-}
+};
 
 // 根据标签来获取一批文章
 pub.getPostsByTag = async(req, res) => {
@@ -58,7 +58,7 @@ pub.getPostsByTag = async(req, res) => {
     }
     res.send(docs);
   });
-}
+};
 
 pub.getAvailableTags = async(req, res) => {
   Post.getAvailableTags(function (err, tags) {
@@ -68,7 +68,7 @@ pub.getAvailableTags = async(req, res) => {
     }
     res.send(tags);
   });
-}
+};
 
 pub.addComment = async(req, res) => {
   let category = req.body.category;
@@ -84,6 +84,6 @@ pub.addComment = async(req, res) => {
     }
     res.send(JSON.stringify({'name': name, 'content': content}));
   })
-}
+};
 
 module.exports = pub;

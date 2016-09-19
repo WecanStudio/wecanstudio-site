@@ -1,7 +1,8 @@
-  {
-    "port": 2333,
-    "whiteOrigins": [
-      "http://localhost:8080",
-      "http://wecanstudio.com"
-    ]
-  }
+{
+  "port": 2333,
+  "whiteOrigins": [
+    "http://localhost:8080",
+    "http://wecanstudio.com",
+    "http://wecanstudio.win"
+  ]
+}

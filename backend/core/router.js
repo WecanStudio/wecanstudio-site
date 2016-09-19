@@ -4,6 +4,7 @@
  */
 const router = require('express').Router();
 const postController = require('../controllers/post');
+const resumeController = require('../controllers/resume');
 
 router.get('/post/:category', postController.getAllPosts);
 
@@ -14,5 +15,7 @@ router.get('/tags', postController.getAvailableTags);
 router.get('/tags/:tag', postController.getPostsByTag);
 
 router.post('/submitComment', postController.addComment);
+
+router.post('/submitResume', resumeController.addResume);
 
 module.exports = router;

@@ -1,0 +1,9 @@
+{
+  "from": "xhinliang@163.com",
+  "host": "smtp.163.com",
+  "transportMethod": "SMTP",
+  "auth": {
+    "user": "xhinliang@163.com",
+    "pass": "54shouquanma"
+  }
+}

@@ -5,17 +5,23 @@ const express = require('express');
 const path = require('path');
 const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
+const mailOptions = require('../config/mail.json');
 const app = express();
+const mailer = require('express-mailer');
+
+mailer.extend(app, mailOptions);
 
 // babel 编译
 require('babel-core/register');
 
-// 各个模块
 const router = require('./router');
 const tool = require('./tool');
 const config = require('../config/main');
 
 app.use(express.static('public'));
+
+app.set('views', __dirname + '/../views');
+app.set('view engine', 'jade');
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
