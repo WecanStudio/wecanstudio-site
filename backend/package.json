@@ -2,6 +2,8 @@
   "name": "wecanstudio",
   "version": "0.0.1",
   "description": "the website of wecanstudio writen in Express 4",
+  "license": "MIT",
+  "repository": "https://github.com/WecanStudio/wecanstudio-site",
   "main": "server.js",
   "contributors": [
     {
@@ -23,7 +25,6 @@
     "mongodb",
     "express"
   ],
-  "license": "MIT",
   "dependencies": {
     "babel-core": "^6.1.21",
     "babel-preset-stage-3": "^6.1.18",

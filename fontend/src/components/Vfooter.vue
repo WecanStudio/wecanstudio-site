@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p>Copyrights © 2016 WecanStudio. All Rights Reserved.</p>
+    <p>Copyrights © 2016 WecanStudio. All Rights Reserved</p>
   </div>
 </template>
 
@@ -8,6 +8,7 @@
   p {
     font-size: 1.4rem;
     margin: auto;
-    color: #3d3d3d;
+    font-family: 'Droid Sans';
+    color: #345e55;
   }
 </style>

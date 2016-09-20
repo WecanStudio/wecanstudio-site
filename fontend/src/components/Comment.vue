@@ -80,17 +80,18 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    background-color: #f7f7f7;
     padding: .5rem 1rem;
-    border-radius: .5rem;
   }
 
   .comment-item-name {
     font-weight: bold;
+    font-size: 1.4rem;
+    border-radius: .5rem;
   }
 
   .comment-item-content {
     padding: 1rem;
+    background-color: #f7f7f7;
   }
 
   .comment-item-reply-wrapper {
