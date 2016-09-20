@@ -8,7 +8,7 @@
       <input v-model="tags" class="comment-form-name" type="text" placeholder="标签（前端暂未支持）" maxlength="20">
       <input v-model="password" class="comment-form-name" type="text" placeholder="发文码" maxlength="20">
       <textarea v-model="content" class="comment-form-content" name="" id="" cols="50" rows="15"
-                placeholder="内容"></textarea>
+                placeholder="内容" debounce="500"></textarea>
       <div class="comment-item-reply-wrapper">
         <a @click="submit" class="comment-item-reply comment-item-reply-submit">发文</a>
       </div>
