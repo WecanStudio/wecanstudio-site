@@ -1,57 +1,145 @@
 <template>
-  <div class="about-wrapper">
-    <h2 class="list-title">微客工作室</h2>
-    <p>西安电子科技大学创新互联网团队，汇聚技术的地方</p>
-    <a href="https://github.com/wecanstudio">Github</a>
+  <div>
+    <div class="post">
+      <div v-html="content">omg</div>
+    </div>
+    <comment></comment>
   </div>
 </template>
 
 <script type="text/babel">
-  import {updateHeadline} from '../vuex/actions'
+  import marked from 'marked'
+  import Prism from 'prismjs'
+  import 'prismjs/themes/prism.css'
+  import {getPost, updateHeadline, clearPost} from '../vuex/actions'
+  import Comment from './Comment'
+
+  marked.setOptions({
+    highlight: (code) => Prism.highlight(code, Prism.languages.javascript)
+  })
+
   export default {
+    components: {
+      Comment
+    },
     vuex: {
+      getters: {
+        post: function ({post}) {
+          return post
+        }
+      },
       actions: {
-        updateHeadline: updateHeadline
+        getPost,
+        clearPost,
+        updateHeadline
       }
     },
     created () {
-      this.updateHeadline('关于')
+      this.getPost(this.$route.params.title)
+    },
+    beforeDestroy () {
+      this.clearPost()
+    },
+    computed: {
+      content: function () {
+        this.updateHeadline(this.post.title)
+        return marked(this.post.content)
+      }
     }
   }
 </script>
 
 <style>
-  .about-wrapper {
-    width: 80%;
-    padding: 1rem;;
+  .post {
+    margin: 2rem 1rem;
+    display: flex;
   }
 
-  .about-wrapper a {
+  .post pre {
+    padding: 1rem;
+    font: 14px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    background-color: #f7f7f7;
+    white-space: pre-wrap;
+    overflow: auto;
+    max-width: 800px;
+  }
+
+  .post code {
+    font: inherit;
+  }
+
+  .post table {
+    border-collapse: collapse;
+  }
+
+  .post td, .post th {
+    border: 1px solid #ddd;
+    padding: .3rem .6rem;
+  }
+
+  .post tbody tr:nth-child(2n+1) {
+    background-color: #f7f7f7;
+  }
+
+  .post a {
     color: #4078c0;
-    display: block;
     transition: all .4s;
   }
 
-  .about-wrapper a:hover {
+  .post a:hover {
     color: #80b2ff;
   }
 
-  .about-wrapper p, .about-wrapper h2, .about-wrapper a {
-    margin: 1rem auto;
+  .post img, .post code {
+    max-width: 100%;
   }
 
-  .about-wrapper p {
-    font-size: 1.8rem;
+  .post h1, .post h2 {
+    border-bottom: 1px solid #d2d2d2;
+    margin: 1rem 0;
   }
 
-  .about-wrapper a {
-    font-size: 1.6rem;
+  .post ul {
+    padding-left: 2rem;
+  }
+
+  .post li {
+    list-style: disc;
+  }
+
+  .post p, .post {
+    margin-bottom: 1rem;
+    color: rgba(0, 0, 0, .8);
+  }
+
+  .post blockquote {
+    padding: 0 1.5rem;
+    margin: 0;
+    color: #777;
+    border-left: 4px solid #ddd;
   }
 
   @media screen and (max-width: 768px) {
-    .about-wrapper p {
-      font-size: 1.6rem;
+    .post {
+      padding: 1rem;
+      margin: 0;
+      font-size: 1.4rem;
     }
 
+    .post h1 {
+      font-size: 2.4rem;
+    }
+
+    .post h2 {
+      font-size: 2.2rem;
+    }
+
+    .post h3 {
+      font-size: 2rem;
+    }
+
+    .post pre {
+      font-size: 1.2rem;
+    }
   }
 </style>
