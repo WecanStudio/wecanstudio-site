@@ -30,8 +30,9 @@ pub.addPost = async(req, res) => {
   let title = req.body.title;
   let content = req.body.content;
   let tags = req.body.tags;
+  let abstract = req.body.abstract;
   let category = req.body.category;
-  let post = new Post(category, title, tags, content);
+  let post = new Post(category, title, tags, content, abstract);
   let jsonStr = JSON.stringify(post);
   tool.debug(jsonStr);
   post.save(function (err) {
