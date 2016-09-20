@@ -18,4 +18,6 @@ router.post('/submitComment', postController.addComment);
 
 router.post('/submitResume', resumeController.addResume);
 
+router.post('/submitPost', postController.addPost);
+
 module.exports = router;

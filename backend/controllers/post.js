@@ -3,6 +3,7 @@
 const tool = require('../core/tool');
 const Post = require('../models/post');
 const Comment = require('../models/comment');
+const config = require('../config/main.json');
 
 let pub = {};
 
@@ -20,18 +21,26 @@ pub.getAllPosts = async(req, res) => {
 
 // 增加一篇文章
 pub.addPost = async(req, res) => {
-  let title = req.params.title;
-  let content = req.params.content;
-  let tags = req.params.tags;
-  let category = req.params.category;
+  // 验证发文码
+  let password = req.body.password;
+  if (password != config.password) {
+    res.send(JSON.stringify({'code': -1}));
+    return;
+  }
+  let title = req.body.title;
+  let content = req.body.content;
+  let tags = req.body.tags;
+  let category = req.body.category;
   let post = new Post(category, title, tags, content);
+  let jsonStr = JSON.stringify(post);
+  tool.debug(jsonStr);
   post.save(function (err) {
     if (err) {
       tool.l(err);
       res.status(500);
       return;
     }
-    res.send('success');
+    res.send(JSON.stringify({'code': 0}));
   })
 };
 

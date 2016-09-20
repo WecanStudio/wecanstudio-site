@@ -1,5 +1,6 @@
 {
   "port": 2333,
+  "password": "wecanstudio2016",
   "whiteOrigins": [
     "http://localhost:8080",
     "http://wecanstudio.com",

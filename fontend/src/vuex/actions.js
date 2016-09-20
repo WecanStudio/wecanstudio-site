@@ -79,3 +79,14 @@ export const submitResume = function ({dispatch}, data) {
       })
     })
 }
+
+export const submitPost = function ({dispatch}, data) {
+  this
+    .$http
+    .post(`${API_ROOT}api/submitPost`, data)
+    .then(function (response) {
+      dispatch(types.SUBMIT_POST, JSON.parse(response.body), error => {
+        dispatch(types.SUBMIT_POST_FAILURE, error)
+      })
+    })
+}

@@ -6,6 +6,7 @@ import post from './modules/post'
 import tags from './modules/tags'
 import tagPostsList from './modules/tagPostsList'
 import recruit from './modules/recruit'
+import dispatch from './modules/dispatch'
 
 Vue.use(Vuex)
 Vue.config.debug = true
@@ -20,6 +21,7 @@ export default new Vuex.Store({
     post: post,
     tags: tags,
     recruit: recruit,
+    dispatch: dispatch,
     tagPostsList: tagPostsList
   }
 })

@@ -33,6 +33,11 @@ router.map({
       require(['./components/Recruit'], resolve)
     }
   },
+  '/dispatch': {
+    component: function (resolve) {
+      require(['./components/Dispatch'], resolve)
+    }
+  },
   '/timeline': {
     component: function (resolve) {
       require(['./components/Timeline'], resolve)

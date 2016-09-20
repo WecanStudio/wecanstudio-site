@@ -4,7 +4,10 @@ const state = {}
 
 const mutations = {
   [SUBMIT_RESUME] (state, data) {
-    window.alert('提交成功')
+    if (data.code === 0) {
+      window.alert('提交成功')
+    }
+    window.alert('失败')
   },
   [SUBMIT_RESUME_FAILURE] (state) {
     return state
