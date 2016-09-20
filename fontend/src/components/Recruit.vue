@@ -1,19 +1,18 @@
 <template>
-  <div class="about-wrapper">
-    <h2 class="list-title">微客工作室 2016 秋季招新</h2>
+  <div class="recruit-wrapper">
     <div class="content">
       <div v-html="content">omg</div>
     </div>
-    <div class="comment-form">
-      <input v-model="name" class="comment-form-name" type="text" placeholder="姓名" maxlength="20">
-      <input v-model="id" class="comment-form-name" type="text" placeholder="学号" maxlength="20">
-      <input v-model="phone" class="comment-form-name" type="text" placeholder="电话" maxlength="20">
-      <input v-model="position" class="comment-form-name" type="text" placeholder="岗位" maxlength="20">
-      <input v-model="email" class="comment-form-name" type="text" placeholder="邮箱" maxlength="20">
-      <textarea v-model="description" class="comment-form-content" name="" id="" cols="50" rows="15"
+    <div class="resume-form">
+      <input v-model="name" class="resume-form-name" type="text" placeholder="姓名" maxlength="20">
+      <input v-model="id" class="resume-form-name" type="text" placeholder="学号" maxlength="20">
+      <input v-model="phone" class="resume-form-name" type="text" placeholder="电话" maxlength="20">
+      <input v-model="position" class="resume-form-name" type="text" placeholder="岗位" maxlength="20">
+      <input v-model="email" class="resume-form-name" type="text" placeholder="邮箱" maxlength="20">
+      <textarea v-model="description" class="resume-form-content" name="" id="" cols="50" rows="15"
                 placeholder="自我介绍，请自由发挥"></textarea>
-      <div class="comment-item-reply-wrapper">
-        <a @click="submit" class="comment-item-reply comment-item-reply-submit">投递</a>
+      <div class="submit-wrapper">
+        <a @click="submit" class="resume-submit resume-submit-submit">投递</a>
       </div>
     </div>
   </div>
@@ -77,57 +76,51 @@
         }
         // noinspection JSUnresolvedFunction
         this.submitResume(data)
-        this.name = ''
-        this.id = ''
-        this.phone = ''
-        this.email = ''
-        this.position = ''
-        this.description = ''
       }
     }
   }
 </script>
 
 <style>
-  .about-wrapper {
+  .recruit-wrapper {
     width: 80%;
     padding: 1rem;;
   }
 
-  .about-wrapper a {
+  .recruit-wrapper a {
     color: #4078c0;
     display: block;
     transition: all .4s;
   }
 
-  .about-wrapper a:hover {
+  .recruit-wrapper a:hover {
     color: #80b2ff;
   }
 
-  .about-wrapper p, .about-wrapper h2, .about-wrapper a {
+  .recruit-wrapper p, .recruit-wrapper h2, .recruit-wrapper a {
     margin: 1rem auto;
   }
 
-  .about-wrapper p {
+  .recruit-wrapper p {
     font-size: 1.8rem;
   }
 
-  .about-wrapper a {
+  .recruit-wrapper a {
     font-size: 1.6rem;
   }
 
-  .comment-item-reply-wrapper {
+  .submit-wrapper {
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-end;
   }
 
-  .comment-item-reply {
+  .resume-submit {
     padding: 1rem;
     transition: all .4s;
   }
 
-  .comment-item-reply:hover {
+  .resume-submit:hover {
     color: #838383;
     cursor: pointer;
   }
@@ -143,13 +136,13 @@
     background-color: #fbfbfb;
   }
 
-  .comment-form {
+  .resume-form {
     display: flex;
     flex-flow: column nowrap;
     padding: 1rem;
   }
 
-  .comment-form-name, .comment-form-content {
+  .resume-form-name, .resume-form-content {
     border: 1px solid #d2d2d2;
     margin-bottom: 1rem;
     padding: 1rem;
@@ -157,21 +150,21 @@
     border-radius: .5rem;
   }
 
-  .comment-form-name {
+  .resume-form-name {
     height: 3.6rem;
   }
 
-  .comment-form-content {
+  .resume-form-content {
     resize: none;
   }
 
-  .comment-item-reply-submit {
+  .resume-submit-submit {
     border: 1px solid #d2d2d2;
     border-radius: .5rem;
   }
 
   @media screen and (max-width: 768px) {
-    .about-wrapper p {
+    .recruit-wrapper p {
       font-size: 1.6rem;
     }
   }

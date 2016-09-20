@@ -1,1 +1,1 @@
-export const API_ROOT = 'http://wecanstudio.com/'
+export const API_ROOT = 'http://studiobackend.xhinliang.com/'

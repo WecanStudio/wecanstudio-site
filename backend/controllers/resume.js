@@ -52,9 +52,8 @@ pub.addResume = async(req, res) => {
       }
       tool.debug('send reply email success !');
     });
-
     // 原样返回
-    res.send(JSON.stringify(resume));
+    res.send(JSON.stringify({code: 0}));
   })
 };
 
