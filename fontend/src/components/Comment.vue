@@ -5,7 +5,6 @@
       <li class="comment-item" v-for="item in comments">
         <div class="comment-item-title">
           <p class="comment-item-name">{{ item.name }}</p>
-          <p class="comment-item-createdAt">{{item.time}}</p>
         </div>
         <p class="comment-item-content">{{ item.content }}</p>
       </li>
