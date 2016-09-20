@@ -1,5 +1,5 @@
 <template>
-  <iframe width="1200" height="3100" src="http://oldstudio.com" scrolling="no"></iframe>
+  <iframe width="1200" frameborder="0" height="3100" src="http://oldstudio.xhinliang.com" scrolling="no"></iframe>
 </template>
 
 <script type="text/babel">

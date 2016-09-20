@@ -8,7 +8,6 @@ html, body{
   	font-family: 'Arial';
     font-size: 100%;
   	 -webkit-font-smoothing: antialiased;
-  	 background: #E8E8E8;
 }
 body a{
 	transition:0.5s all;
@@ -115,7 +114,7 @@ nav a#pull {
 }
 /*Styles for screen 600px and lower*/
 @media screen and (max-width: 768px) {
-	nav { 
+	nav {
   		height: auto;
   		float:none;
   	}
@@ -268,7 +267,6 @@ nav a#pull {
 }
 /*---- Other Expertise ----*/
 .expertise{
-	background:#F7F7F7;
 }
 .expertice-right-grid{
 	margin: 2em 0 0;
@@ -351,7 +349,7 @@ a.leran-more{
 	text-transform:uppercase;
 	text-decoration:none;
 	font-weight:600;
-	padding:0.9em 2em; 
+	padding:0.9em 2em;
 	display:inline-block;
 	font-size:1.1em;
 	border-radius: 3em;
@@ -629,7 +627,6 @@ strong em
 /*---team-members--*/
 .team-members{
 	padding: 3em 0 4em 0;
-	background: #E8E8E8;
 }
 .tm-head{
 	text-align:center;
@@ -695,7 +692,6 @@ strong em
 }
 .team-members{
 	padding: 3em 0 8em 0;
-	background:#E8E8E8;
 }
 .tm-head{
 	text-align:center;
@@ -813,7 +809,7 @@ strong em
 }
 .contact-right input[type="text"],.contact-right textarea{
 	width:100%;
-	padding:0.8em;	
+	padding:0.8em;
 	font-family: 'Arial';
 	color:#666;
 	font-weight:300;
@@ -1399,7 +1395,7 @@ strong em
 	.tm-head p {
 		width: 80%;
 		margin: 0 auto;
-        
+
 	}
 	.contact-right-grid p, .contact-right-grid p a {
 		font-size: 1em;
