@@ -6,7 +6,6 @@
   </div>
 </template>
 
-
 <script type="text/babel">
   import marked from 'marked'
   import Prism from 'prismjs'
