@@ -1,27 +1,23 @@
 <template>
-  <div>
-    <div class="post">
+  <div class="about-wrapper">
+    <div class="content">
       <div v-html="content">omg</div>
     </div>
-    <comment></comment>
   </div>
 </template>
+
 
 <script type="text/babel">
   import marked from 'marked'
   import Prism from 'prismjs'
   import 'prismjs/themes/prism.css'
   import {getPost, updateHeadline, clearPost} from '../vuex/actions'
-  import Comment from './Comment'
 
   marked.setOptions({
     highlight: (code) => Prism.highlight(code, Prism.languages.javascript)
   })
 
   export default {
-    components: {
-      Comment
-    },
     vuex: {
       getters: {
         post: function ({post}) {
@@ -35,14 +31,14 @@
       }
     },
     created () {
-      this.getPost(this.$route.params.title)
+      this.getPost('about')
+      this.updateHeadline('关于')
     },
     beforeDestroy () {
       this.clearPost()
     },
     computed: {
       content: function () {
-        this.updateHeadline(this.post.title)
         return marked(this.post.content)
       }
     }
@@ -50,69 +46,102 @@
 </script>
 
 <style>
-  .post {
+  .about-wrapper {
+    width: 80%;
+    padding: 1rem;;
+  }
+
+  .about-wrapper a {
+    color: #4078c0;
+    display: block;
+    transition: all .4s;
+  }
+
+  .about-wrapper a:hover {
+    color: #80b2ff;
+  }
+
+  .about-wrapper p, .about-wrapper h2, .about-wrapper a {
+    margin: 1rem auto;
+  }
+
+  .about-wrapper p {
+    font-size: 1.8rem;
+  }
+
+  .about-wrapper a {
+    font-size: 1.6rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    .about-wrapper p {
+      font-size: 1.6rem;
+    }
+  }
+
+  .content {
     margin: 2rem 1rem;
     display: flex;
   }
 
-  .post pre {
+  .content pre {
     padding: 1rem;
-    font: 14px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    font: 14px consolas, "liberation mono", menlo, courier, monospace;
     background-color: #f7f7f7;
     white-space: pre-wrap;
     overflow: auto;
     max-width: 800px;
   }
 
-  .post code {
+  .content code {
     font: inherit;
   }
 
-  .post table {
+  .content table {
     border-collapse: collapse;
   }
 
-  .post td, .post th {
+  .content td, .post th {
     border: 1px solid #ddd;
     padding: .3rem .6rem;
   }
 
-  .post tbody tr:nth-child(2n+1) {
+  .content tbody tr:nth-child(2n+1) {
     background-color: #f7f7f7;
   }
 
-  .post a {
+  .content a {
     color: #4078c0;
     transition: all .4s;
   }
 
-  .post a:hover {
+  .content a:hover {
     color: #80b2ff;
   }
 
-  .post img, .post code {
+  .content img, .post code {
     max-width: 100%;
   }
 
-  .post h1, .post h2 {
+  .content h1, .post h2 {
     border-bottom: 1px solid #d2d2d2;
     margin: 1rem 0;
   }
 
-  .post ul {
+  .content ul {
     padding-left: 2rem;
   }
 
-  .post li {
+  .content li {
     list-style: disc;
   }
 
-  .post p, .post {
+  .content p, .post {
     margin-bottom: 1rem;
     color: rgba(0, 0, 0, .8);
   }
 
-  .post blockquote {
+  .content blockquote {
     padding: 0 1.5rem;
     margin: 0;
     color: #777;
@@ -120,26 +149,27 @@
   }
 
   @media screen and (max-width: 768px) {
-    .post {
+    .content {
       padding: 1rem;
       margin: 0;
       font-size: 1.4rem;
     }
 
-    .post h1 {
+    .content h1 {
       font-size: 2.4rem;
     }
 
-    .post h2 {
+    .content h2 {
       font-size: 2.2rem;
     }
 
-    .post h3 {
+    .content h3 {
       font-size: 2rem;
     }
 
-    .post pre {
+    .content pre {
       font-size: 1.2rem;
     }
   }
 </style>
+

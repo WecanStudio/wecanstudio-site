@@ -165,7 +165,7 @@
 
   .content pre {
     padding: 1rem;
-    font: 14px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    font: 14px consolas, "liberation mono", menlo, courier, monospace;
     background-color: #f7f7f7;
     white-space: pre-wrap;
     overflow: auto;

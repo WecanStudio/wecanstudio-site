@@ -2,39 +2,30 @@
 1 verbose cli [ '/usr/bin/nodejs', '/usr/bin/npm', 'start' ]
 2 info using npm@2.15.9
 3 info using node@v4.5.0
-4 verbose run-script [ 'prestart', 'start', 'poststart' ]
-5 info prestart wecanstudio@0.0.1
-6 info start wecanstudio@0.0.1
-7 verbose unsafe-perm in lifecycle true
-8 info wecanstudio@0.0.1 Failed to exec start script
-9 verbose stack Error: wecanstudio@0.0.1 start: `node --harmony core/server.js`
-9 verbose stack Exit status 1
-9 verbose stack     at EventEmitter.<anonymous> (/usr/lib/node_modules/npm/lib/utils/lifecycle.js:217:16)
-9 verbose stack     at emitTwo (events.js:87:13)
-9 verbose stack     at EventEmitter.emit (events.js:172:7)
-9 verbose stack     at ChildProcess.<anonymous> (/usr/lib/node_modules/npm/lib/utils/spawn.js:24:14)
-9 verbose stack     at emitTwo (events.js:87:13)
-9 verbose stack     at ChildProcess.emit (events.js:172:7)
-9 verbose stack     at maybeClose (internal/child_process.js:829:16)
-9 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)
-10 verbose pkgid wecanstudio@0.0.1
-11 verbose cwd /home/xhinliang/code/fontend/dev_2016_9/wecanstudio/backend
-12 error Linux 4.4.0-36-generic
-13 error argv "/usr/bin/nodejs" "/usr/bin/npm" "start"
-14 error node v4.5.0
-15 error npm  v2.15.9
-16 error code ELIFECYCLE
-17 error wecanstudio@0.0.1 start: `node --harmony core/server.js`
-17 error Exit status 1
-18 error Failed at the wecanstudio@0.0.1 start script 'node --harmony core/server.js'.
-18 error This is most likely a problem with the wecanstudio package,
-18 error not with npm itself.
-18 error Tell the author that this fails on your system:
-18 error     node --harmony core/server.js
-18 error You can get information on how to open an issue for this project with:
-18 error     npm bugs wecanstudio
-18 error Or if that isn't available, you can get their info via:
-18 error
-18 error     npm owner ls wecanstudio
-18 error There is likely additional logging output above.
-19 verbose exit [ 1, true ]
+4 verbose stack Error: Failed to parse json
+4 verbose stack Unexpected token 's' at 16:4
+4 verbose stack   "scripts": {
+4 verbose stack    ^
+4 verbose stack     at parseError (/usr/lib/node_modules/npm/node_modules/read-package-json/read-json.js:390:11)
+4 verbose stack     at parseJson (/usr/lib/node_modules/npm/node_modules/read-package-json/read-json.js:79:23)
+4 verbose stack     at /usr/lib/node_modules/npm/node_modules/read-package-json/read-json.js:48:5
+4 verbose stack     at /usr/lib/node_modules/npm/node_modules/graceful-fs/graceful-fs.js:78:16
+4 verbose stack     at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:380:3)
+5 verbose cwd /home/xhinliang/code/fontend/dev_2016_9/wecanstudio/backend
+6 error Linux 4.4.0-36-generic
+7 error argv "/usr/bin/nodejs" "/usr/bin/npm" "start"
+8 error node v4.5.0
+9 error npm  v2.15.9
+10 error file /home/xhinliang/code/fontend/dev_2016_9/wecanstudio/backend/package.json
+11 error code EJSONPARSE
+12 error Failed to parse json
+12 error Unexpected token 's' at 16:4
+12 error   "scripts": {
+12 error    ^
+13 error File: /home/xhinliang/code/fontend/dev_2016_9/wecanstudio/backend/package.json
+14 error Failed to parse package.json data.
+14 error package.json must be actual JSON, not just JavaScript.
+14 error
+14 error This is not a bug in npm.
+14 error Tell the package author to fix their package.json file. JSON.parse
+15 verbose exit [ 1, true ]

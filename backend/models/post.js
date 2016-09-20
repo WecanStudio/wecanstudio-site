@@ -31,19 +31,27 @@ Post.prototype.save = function (callback) {
     if (err) {
       return callback(err);
     }
+
     db.collection('posts', function (err, collection) {
       if (err) {
         mongodb.close();
         return callback(err);
       }
-      collection.insert(post, {
-        safe: true
-      }, function (err) {
-        mongodb.close();
+      // 先删除同名的再插入
+      collection.deleteMany({title: post.title, category: post.category}, function (err, results) {
         if (err) {
-          return callback(err);
+          tool.debug(err);
+          return;
         }
-        callback(null);
+        collection.insert(post, {
+          safe: false
+        }, function (err) {
+          mongodb.close();
+          if (err) {
+            return callback(err);
+          }
+          callback(null);
+        });
       });
     });
   });
