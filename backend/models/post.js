@@ -25,6 +25,7 @@ Post.prototype.save = function (callback) {
     title: this.title,
     content: this.content,
     tags: this.tags,
+    abstract: this.abstract,
     comments: []
   };
   mongodb.open(function (err, db) {
