@@ -8,13 +8,7 @@
 
 <script type="text/babel">
   import marked from 'marked'
-  import Prism from 'prismjs'
-  import 'prismjs/themes/prism.css'
   import {getPost, updateHeadline, clearPost} from '../vuex/actions'
-
-  marked.setOptions({
-    highlight: (code) => Prism.highlight(code, Prism.languages.javascript)
-  })
 
   export default {
     vuex: {
@@ -35,6 +29,16 @@
     },
     beforeDestroy () {
       this.clearPost()
+    },
+    data () {
+      return {
+        check: {
+          label: true
+        },
+        event: null,
+        input: null,
+        match: null
+      }
     },
     computed: {
       content: function () {
@@ -171,4 +175,3 @@
     }
   }
 </style>
-

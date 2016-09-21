@@ -8,7 +8,7 @@
   p {
     font-size: 1.4rem;
     margin: auto;
-    font-family: 'Droid Sans';
+    font-family: 'Droid Sans', serif;
     color: #345e55;
   }
 </style>

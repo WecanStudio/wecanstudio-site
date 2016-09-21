@@ -67,6 +67,11 @@ module.exports = {
         }
       },
       {
+        test: /\.css$/, // Only .css files
+        loader: 'style!css' // Run both loaders
+      }
+      ,
+      {
         test: /\.(woff2?|eot|ttf|otf)(\?.*)?$/,
         loader: 'url',
         query: {

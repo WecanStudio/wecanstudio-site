@@ -4,12 +4,14 @@
       <div v-html="content">omg</div>
     </div>
     <div class="resume-form">
+      <h3>我要投递</h3>
+      <v-select :value.sync="selected" :options="options"></v-select>
       <input v-model="name" class="resume-form-name" type="text" placeholder="姓名" maxlength="20">
       <input v-model="id" class="resume-form-name" type="text" placeholder="学号" maxlength="20">
       <input v-model="phone" class="resume-form-name" type="text" placeholder="电话" maxlength="20">
-      <input v-model="position" class="resume-form-name" type="text" placeholder="岗位" maxlength="20">
       <input v-model="email" class="resume-form-name" type="text" placeholder="邮箱" maxlength="20">
-      <textarea v-model="description" class="resume-form-content" name="" id="" cols="50" rows="15"
+      <input v-model="position" class="resume-form-name" type="text" placeholder="岗位" maxlength="20">
+      <textarea v-model="description" class="resume-form-content" rows="15"
                 placeholder="自我介绍，请自由发挥"></textarea>
       <div class="submit-wrapper">
         <a @click="submit" class="resume-submit resume-submit-submit">投递</a>
@@ -20,22 +22,21 @@
 
 <script type="text/babel">
   import marked from 'marked'
-  import Prism from 'prismjs'
-  import 'prismjs/themes/prism.css'
   import {getPost, updateHeadline, clearPost, submitResume} from '../vuex/actions'
+  import vSelect from 'vue-select'
 
-  marked.setOptions({
-    highlight: (code) => Prism.highlight(code, Prism.languages.javascript)
-  })
-
+  // noinspection JSUnresolvedVariable
   export default {
+    components: {vSelect},
     data () {
       return {
+        selected: null,
+        options: ['foo', 'bar', 'baz'],
         name: '',
         id: '',
         phone: '',
         email: '',
-        position: '',
+        position: 1,
         description: ''
       }
     },

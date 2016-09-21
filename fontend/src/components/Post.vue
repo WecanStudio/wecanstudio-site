@@ -9,14 +9,8 @@
 
 <script type="text/babel">
   import marked from 'marked'
-  import Prism from 'prismjs'
-  import 'prismjs/themes/prism.css'
   import {getPost, updateHeadline, clearPost} from '../vuex/actions'
   import Comment from './Comment'
-
-  marked.setOptions({
-    highlight: (code) => Prism.highlight(code, Prism.languages.javascript)
-  })
 
   export default {
     components: {

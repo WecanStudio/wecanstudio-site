@@ -3,11 +3,9 @@ import App from './App.vue'
 import VueRouter from 'vue-router'
 import VueResource from 'vue-resource'
 import FastClick from 'fastclick'
-import VueAnimatedList from 'vue-animated-list'
 
 Vue.use(VueResource)
 Vue.use(VueRouter)
-Vue.use(VueAnimatedList)
 Vue.http.options.emulateJSON = true
 
 const router = new VueRouter({

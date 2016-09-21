@@ -2,8 +2,10 @@ var path = require('path')
 var express = require('express')
 var webpack = require('webpack')
 var favicon = require('serve-favicon')
+// 注意这个 config 事实上是一个文件夹
 var config = require('../config')
 var proxyMiddleware = require('http-proxy-middleware')
+// 按照当前的环境来看是加载正式环境还是测试环境的配置
 var webpackConfig = process.env.NODE_ENV === 'testing'
   ? require('./webpack.prod.conf')
   : require('./webpack.dev.conf')
