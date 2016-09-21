@@ -22,11 +22,10 @@
     "babel-runtime": "^6.0.0",
     "vue": "^1.0.21",
     "vue-router": "^0.7.13",
-    "vue-select": "sagalbot/vue-select",
-    "vue-strap": "^1.1.23",
     "vuex": "^0.8.2"
   },
   "devDependencies": {
+    "vue-multiselect": "^1.1.3",
     "babel-core": "^6.0.0",
     "babel-loader": "^6.0.0",
     "style-loader": "*",

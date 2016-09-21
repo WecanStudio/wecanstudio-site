@@ -4,13 +4,19 @@
       <div v-html="content">omg</div>
     </div>
     <div class="resume-form">
-      <h3>我要投递</h3>
-      <v-select :value.sync="selected" :options="options"></v-select>
+      <h3>我要报名</h3>
+      <div>
+        <multiselect
+          :selected="selected"
+          :options="options"
+          @update="updateSelected">
+        </multiselect>
+      </div>
+      <p></p>
       <input v-model="name" class="resume-form-name" type="text" placeholder="姓名" maxlength="20">
       <input v-model="id" class="resume-form-name" type="text" placeholder="学号" maxlength="20">
       <input v-model="phone" class="resume-form-name" type="text" placeholder="电话" maxlength="20">
       <input v-model="email" class="resume-form-name" type="text" placeholder="邮箱" maxlength="20">
-      <input v-model="position" class="resume-form-name" type="text" placeholder="岗位" maxlength="20">
       <textarea v-model="description" class="resume-form-content" rows="15"
                 placeholder="自我介绍，请自由发挥"></textarea>
       <div class="submit-wrapper">
@@ -23,15 +29,14 @@
 <script type="text/babel">
   import marked from 'marked'
   import {getPost, updateHeadline, clearPost, submitResume} from '../vuex/actions'
-  import vSelect from 'vue-select'
+  import Multiselect from 'vue-multiselect'
 
-  // noinspection JSUnresolvedVariable
   export default {
-    components: {vSelect},
+    components: {Multiselect},
     data () {
       return {
         selected: null,
-        options: ['foo', 'bar', 'baz'],
+        options: ['iOS', 'Android', 'Web 前端', 'Web 后端', '产品运营', 'UI / UX'],
         name: '',
         id: '',
         phone: '',
@@ -64,9 +69,26 @@
       content: function () {
         return marked(this.post.content)
       }
+
     },
     methods: {
+      checkEmail () {
+        const reg = /^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+(.[a-zA-Z0-9_-])+/
+        return reg.test(this.email)
+      },
+      checkPhone () {
+        const re = /^1\d{10}$/
+        return re.test(this.phone)
+      },
       submit () {
+        if (!this.checkEmail()) {
+          window.alert('邮箱格式不正确')
+          return
+        }
+        if (!this.checkPhone()) {
+          window.alert('手机号码不正确')
+          return
+        }
         let data = {
           name: this.name,
           id: this.id,
@@ -77,6 +99,10 @@
         }
         // noinspection JSUnresolvedFunction
         this.submitResume(data)
+      },
+      updateSelected (newSelected) {
+        this.selected = newSelected
+        this.position = newSelected
       }
     }
   }
