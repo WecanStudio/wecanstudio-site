@@ -1,5 +1,9 @@
 <template>
   <div class="recruit-wrapper">
+    <notification
+      :options.sync="notificationOptions"
+      :show.sync="showNotification">
+    </notification>
     <div class="content">
       <div v-html="content">omg</div>
     </div>
@@ -7,8 +11,9 @@
       <h3>我要报名</h3>
       <div>
         <multiselect
-          :selected="selected"
-          :options="options"
+          :selected="selected" ,
+          :options="options" ,
+          placeholder="选择岗位"
           @update="updateSelected">
         </multiselect>
       </div>
@@ -27,14 +32,27 @@
 </template>
 
 <script type="text/babel">
+  import Notification from './Notification'
   import marked from 'marked'
   import {getPost, updateHeadline, clearPost, submitResume} from '../vuex/actions'
   import Multiselect from 'vue-multiselect'
 
   export default {
-    components: {Multiselect},
+    components: {
+      Multiselect,
+      Notification
+    },
     data () {
       return {
+        showNotification: false,
+        notificationOptions: {
+          backgroundColor: '#769FCD',
+          barColor: '#415f77',
+          countdownBar: true,
+          content: 'SHOW TIME',
+          showTime: 20,
+          textColor: '#fff'
+        },
         selected: null,
         options: ['iOS', 'Android', 'Web 前端', 'Web 后端', '产品运营', 'UI / UX'],
         name: '',
@@ -69,24 +87,35 @@
       content: function () {
         return marked(this.post.content)
       }
-
     },
     methods: {
+      notify (text) {
+        this.notificationOptions.content = text
+        this.showNotification = true
+        // 两秒后自动 dismiss
+        setTimeout(() => {
+          this.showNotification = false
+        }, 2000)
+      },
       checkEmail () {
         const reg = /^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+(.[a-zA-Z0-9_-])+/
-        return reg.test(this.email)
+        let checkResult = reg.test(this.email)
+        if (!checkResult) {
+          this.notify('邮箱格式不正确，请检查！')
+        }
       },
       checkPhone () {
         const re = /^1\d{10}$/
-        return re.test(this.phone)
+        let checkResult = re.test(this.phone)
+        if (!checkResult) {
+          this.notify('手机号码格式不正确，请检查！')
+        }
       },
       submit () {
         if (!this.checkEmail()) {
-          window.alert('邮箱格式不正确')
           return
         }
         if (!this.checkPhone()) {
-          window.alert('手机号码不正确')
           return
         }
         let data = {
@@ -150,17 +179,6 @@
   .resume-submit:hover {
     color: #838383;
     cursor: pointer;
-  }
-
-  .comment-reply-container {
-    border: 1px solid #d2d2d2;
-    border-radius: .5rem;
-    margin: 1rem;
-    color: #7c7c7c;
-  }
-
-  .comment-reply-container .comment-item-title {
-    background-color: #fbfbfb;
   }
 
   .resume-form {
