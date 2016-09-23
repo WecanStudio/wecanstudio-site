@@ -1,7 +1,9 @@
 ## wecanstudio-site
+[中文](https://github.com/WecanStudio/wecanstudio-site/blob/master/README-CN.md)
 Pure JavaScript Web App.
 Using ES2015 and Babel.
 All of the posts can be edit in browser.
+
 [Test URL](wecanstudio.xhinliang.com)
 
 ### Intro
