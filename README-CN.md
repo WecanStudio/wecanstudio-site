@@ -1,6 +1,8 @@
 ## wecanstudio-site
 纯 JavaScript 实现的 Web App，使用 ES2015。
+
 主页内容需要修改，未正式上线，现在提供一个测试地址。
+
 所有的文章（包括“关于”、“招新”）都可以在浏览器直接编辑。（具体怎么做，看代码吧～）
 
 [Test URL](wecanstudio.xhinliang.com)
