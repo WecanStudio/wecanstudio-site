@@ -11,24 +11,19 @@
 
 #### **前端**
 前端路由，一个单页应用（SPA）。
-
 响应式界面，用户友好。
 
-`Vue` + `Vuex` + `Vue-router` 主框架，状态管理，前端路由
-
-`Express` + `Babel` + `Webpack` 代码即时刷新，即写即见，连 F5 都不需要了～
+- `Vue` + `Vuex` + `Vue-router`
+主框架，状态管理，前端路由
+`Express` + `Babel` + `Webpack`
+代码即时编译刷新，即写即见，连 F5 都不需要了～
 
 #### **后端**
-`Express` 主框架
-
+- `Express` 主框架
 其实这个算不上框架层面的东西，因为 `Express` `Koa` 之流的怎么写都是很随意的，这里沿用了我写 `PHP` 的习惯。
-
-`MongoDB` 数据库
-
+- `MongoDB` 数据库
 整个的数据都是 JSON ，所以用 `MongoDB` 肯定是最佳选择（这里没有考虑并发等因素）。
-
-`Express-mailer` 邮件
-
+- `Express-mailer` 邮件
 因为需要做招新，所以邮件通知很有必要，这个库非常棒，谁用谁知道。
 
 ### 构建
