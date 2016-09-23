@@ -13,17 +13,20 @@ All of the posts can be edit in browser.
 
 #### FontEnd
 `Vue` + `Vuex` + `Vue-router` for main framework.
+
 `Express` + `Babel` + `Webpack` for hot middleware in develop.
 
 #### BackEnd
 `Express` for main framework.
+
 `MongoDB` for database.
+
 `Express-mailer` for Email.
 
 ### Build
 #### Core
-[Node.js & NPM](https://nodejs.org)
-[MongoDB](https://www.mongodb.com/)
+- [Node.js & NPM](https://nodejs.org)
+- [MongoDB](https://www.mongodb.com/)
 
 #### Clone and install dependencies
 ```
