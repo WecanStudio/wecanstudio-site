@@ -16,7 +16,7 @@
 - `Vue` + `Vuex` + `Vue-router`
 主框架，状态管理，前端路由
 
-`Express` + `Babel` + `Webpack`
+- `Express` + `Babel` + `Webpack`
 代码即时编译刷新，即写即见，连 F5 都不需要了～
 
 #### **后端**
