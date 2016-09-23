@@ -1,44 +1,51 @@
 ## wecanstudio-site
-Pure JavaScript Web App.
-Using ES2015 and Babel.
-All of the posts can be edit in browser.
+纯 JavaScript 实现的 Web App，使用 ES2015。
+主页内容需要修改，未正式上线，现在提供一个测试地址。
+所有的文章（包括“关于”、“招新”）都可以在浏览器直接编辑。（具体怎么做，看代码吧～）
 [Test URL](wecanstudio.xhinliang.com)
 
-### Intro
+### 简介
 
-#### FontEnd
-`Vue` + `Vuex` + `Vue-router` for main framework.
-`Express` + `Babel` + `Webpack` for hot middleware in develop.
+#### 前端
+前端路由，一个单页应用（SPA）。
+响应式界面，用户友好。
+`Vue` + `Vuex` + `Vue-router` 主框架，状态管理，前端路由
 
-#### BackEnd
-`Express` for main framework.
-`MongoDB` for database.
-`Express-mailer` for Email.
+`Express` + `Babel` + `Webpack` 代码即时刷新，即写即见，连 F5 都不需要了～
 
-### Build
-#### Core
-[Node.js & NPM](https://nodejs.org)
-[MongoDB](https://www.mongodb.com/)
+#### 后端
+`Express` 主框架
+其实这个算不上框架层面的东西，因为 `Express` `Koa` 之流的怎么写都是很随意的，这里沿用了我写 `PHP` 的习惯。
+`MongoDB` 数据库
+整个的数据都是 JSON ，所以用 `MongoDB` 肯定是最佳选择（这里没有考虑并发等因素）。
+`Express-mailer` 邮件
+因为需要做招新，所以邮件通知很有必要，这个库非常棒，谁用谁知道。
 
-#### Clone and install dependencies
+### 构建
+#### 核心
+首先你需要安装 `Node.js` `NPM` `MongoDB`，具体安装过程找官网吧！
+- [Node.js & NPM](https://nodejs.org)
+- [MongoDB](https://www.mongodb.com/)
+
+#### 下载项目，更新依赖
 ```
 git clone git@github.com:WecanStudio/wecanstudio-site.git
 cd wecanstudio-site/fontend && npm install && cd ../backend && npm install
 ```
 
-#### BackEnd
-- Run `npm start`
-- Backup MongoDB to file `npm run backup`
-- Restore MongoDB from file `npm run restore`
+#### 后端
+- 运行 `npm start`
+- 备份 `npm run backup`
+- 恢复 `npm restore`
 
-#### Fontend
-- Hot dev `npm run dev`
-- Build `npm run build`
+#### 前端
+- 开发 `npm run dev`
+- 构建 `npm run build`
 
-### More
+### 更多
 - XhinLiang => xhinliang@gmail.com
 
-### Thanks
+### 感谢
 - [Qiutc](https://github.com/TongchengQiu)
 
 ### License

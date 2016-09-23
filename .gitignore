@@ -1,7 +1,6 @@
 node_modules
 .idea
 backup/*
-npm-debug.log
+npm-debug.log*
 # VIM
-*~
 *.swp

@@ -1,2 +1,2 @@
-export const API_ROOT = 'http://localhost:2333/'
-export const OLD_PAGE = 'http://oldstudi.xhinliang.com/'
+export const API_ROOT = 'http://studiobackend.xhinliang.com/'
+export const OLD_PAGE = 'http://oldstudio.xhinliang.com/'
