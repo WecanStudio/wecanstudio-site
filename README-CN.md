@@ -5,7 +5,7 @@
 
 所有的文章（包括“关于”、“招新”）都可以在浏览器直接编辑。（具体怎么做，看代码吧～）
 
-[Test URL](wecanstudio.xhinliang.com)
+[Test URL](http://wecanstudio.xhinliang.com)
 
 ### 简介
 

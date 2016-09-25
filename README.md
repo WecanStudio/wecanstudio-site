@@ -7,7 +7,7 @@ Using ES2015 and Babel.
 
 All of the posts can be edit in browser.
 
-[Test URL](wecanstudio.xhinliang.com)
+[Test URL](http://wecanstudio.xhinliang.com)
 
 ### Intro
 
