@@ -1,15 +1,15 @@
-<template/>
+<template>
 <div>
   <ul>
     <li>
-      <p class="image" data-tip="Wechat" id="wechat" v-on:click="open('http://github.com/WecanStudio')"></p>
-    </li>
-    <li lwef="fef">
-      <p class="image" data-tip="Repo" id="repo"
-         v-on:click="open('http://github.com/WecanStudio/wecanstudio-site')"></p>
+      <p class="image" data-tip="Wechat" id="wechat" @click="open('http://github.com/WecanStudio')"></p>
     </li>
     <li>
-      <p class="image" data-tip="GitHub" id="github" v-on:click="open('http://github.com/WecanStudio')"></p>
+      <p class="image" data-tip="Repo" id="repo"
+         @click="open('http://github.com/WecanStudio/wecanstudio-site')"></p>
+    </li>
+    <li>
+      <p class="image" data-tip="GitHub" id="github" @click="open('http://github.com/WecanStudio')"></p>
     </li>
   </ul>
 </div>
