@@ -102,14 +102,18 @@
         let checkResult = reg.test(this.email)
         if (!checkResult) {
           this.notify('邮箱格式不正确，请检查！')
+          return false
         }
+        return true
       },
       checkPhone () {
         const re = /^1\d{10}$/
         let checkResult = re.test(this.phone)
         if (!checkResult) {
           this.notify('手机号码格式不正确，请检查！')
+          return false
         }
+        return true
       },
       submit () {
         if (!this.checkEmail()) {
